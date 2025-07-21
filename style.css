@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           2011 Roblox
 @namespace      github.com/openstyles/stylus
-@version        1.5.1
+@version        1.5.2
 @description    A new userstyle
 @author         Xammand
 @preprocessor   stylus
@@ -270,6 +270,12 @@
         #navigation-container {
             height: 77px;
         }
+        
+        if header == js {
+            #navigation-container {
+            height: 63px;
+        }
+        }
     }
     
     if style == 1 {
@@ -486,7 +492,7 @@
         display: block !important;
         text-align: center;
         width: unset;
-        padding: 0;
+        padding: 0 !important;
         line-height: normal;
         color: inherit !important;
     }
@@ -3076,7 +3082,7 @@
                 height: 50px;
                 background: none;
                 position: relative;
-                padding-left: 145px;
+                padding-left: 135px;
             }
             
             .light-theme .rbx-header .navbar-search {
@@ -3260,6 +3266,10 @@
                 padding: 0;
                 background: none;
                 color: inherit;
+            }
+            
+            #navbar-stream .notification-stream-icon #notifications-bell-badge.ng-hide {
+                display: inline !important;
             }
             
             #navbar-robux {
@@ -3463,6 +3473,10 @@
             }
             
             .rbx-platform-event-container {
+                display: none;
+            }
+            
+            #navigation .simplebar-track.simplebar-horizontal, #navigation .simplebar-track.simplebar-vertical {
                 display: none;
             }
             
@@ -15695,7 +15709,7 @@
                 text-align: center;
             }
             
-            .container-main > .content:before {
+            .container-main > .content:has(#BuildersClubContainer):before {
                 content: url(/images/buildersclubad728x90.jpg);
                 margin-bottom: 11px;
                 display: inline-block;
