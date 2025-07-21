@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           2011 Roblox
 @namespace      github.com/openstyles/stylus
-@version        1.5.0
+@version        1.5.1
 @description    A new userstyle
 @author         Xammand
 @preprocessor   stylus
@@ -219,6 +219,15 @@
         cursor: default;
     }
     
+    .checkbox input[type="checkbox"] {
+        position: unset;
+        opacity: 1;
+    }
+    
+    .light-theme .checkbox input[type="checkbox"] + label {
+        display: none;
+    }
+    
     if style == 1 {
         .container-main {
             margin: 0 auto !important;
@@ -327,6 +336,7 @@
             background: white;
             margin: 0 auto !important;
             width: 900px;
+            display: block;
         }
     }
     
@@ -418,6 +428,67 @@
     
     .game-card-thumb-container::before {
         display: none;
+    }
+    
+    /* Popups */
+
+    .light-theme .popover {
+        box-shadow: none;
+        border-radius: 0;
+        background: #fff;
+        color: inherit;
+        transition: none;
+        max-width: none;
+        margin-top: 5px !important;
+    }
+    
+    .popover.bottom > .arrow {
+        display: none;
+    }
+    
+    .rbx-header .rbx-navbar-right .popover-content {
+        position: unset;
+    }
+    
+    .light-theme .dropdown-menu {
+        box-shadow: none;
+        background: #fff;
+        min-width: unset;
+        font-family: Verdana, Sans-Serif;
+        font-size: 0.9em;
+        position: unset;
+        border-radius: 0;
+        border: solid 1px #777;
+        color: #777;
+        text-align: center;
+        float: none;
+        width: unset;
+    }
+    
+    .light-theme .dropdown-menu li {
+        color: inherit;
+        text-align: center !important;
+        padding: 2px 5px;
+        width: unset !important;
+    }
+    
+    .light-theme .dropdown-menu li:hover {
+        background-color: #6e99c9;
+        border-color: #000;
+        color: #fff;
+    }
+    
+    .light-theme .dropdown-menu li:not(:last-child) {
+        border-bottom: solid 1px #777;
+    }
+    
+    .light-theme .dropdown-menu li a {
+        display: block !important;
+        text-align: center;
+        width: unset;
+        padding: 0;
+        line-height: normal;
+        color: inherit !important;
     }
     
     /* Items */
@@ -1346,7 +1417,7 @@
     
     /* Button */
 
-    .avatar-thumbnail .toggle-three-dee, .light-theme .btn-growth-lg, .light-theme .btn-buy-md, .light-theme .btn-control-sm, .light-theme .btn-control-md, .light-theme .btn-primary-md, .light-theme .btn-secondary-md, .light-theme .btn-cta-md, .light-theme .avatar-card-btns .accept-friend, .profile-avatar-left .enable-three-dee, .light-theme .btn-generic-back-sm, .light-theme .btn-control-xs, .light-theme.builder-font .refresh-link-icon, .light-theme .btn-primary-lg {
+    .avatar-thumbnail .toggle-three-dee, .light-theme .btn-growth-lg, .light-theme .btn-buy-md, .light-theme .btn-control-sm, .light-theme .btn-control-md, .light-theme .btn-primary-md, .light-theme .btn-secondary-md, .light-theme .btn-cta-md, .light-theme .avatar-card-btns .accept-friend, .profile-avatar-left .enable-three-dee, .light-theme .btn-generic-back-sm, .light-theme .btn-control-xs, .light-theme.builder-font .refresh-link-icon, .light-theme .btn-primary-lg, .light-theme .details-btns-fixed .btn-secondary-sm {
         cursor: pointer;
         background-color: #fff;
         font-family: Verdana,Sans-Serif;
@@ -1407,7 +1478,7 @@
         content: "Enable ";
     }
     
-    .avatar-thumbnail .toggle-three-dee:hover,.light-theme .btn-growth-lg:hover, .light-theme .btn-buy-md:hover, .light-theme .btn-control-sm:hover, .light-theme .btn-control-md:hover, .light-theme .btn-primary-md:hover,.light-theme .btn-secondary-md:hover, .light-theme .btn-cta-md:hover, .light-theme .avatar-card-btns .accept-friend:hover, .profile-avatar-left .enable-three-dee:hover,.light-theme .btn-generic-back-sm:hover, .light-theme .btn-control-xs:hover, .light-theme.builder-font .refresh-link-icon:hover, .light-theme .btn-primary-lg:hover {
+    .avatar-thumbnail .toggle-three-dee:hover,.light-theme .btn-growth-lg:hover, .light-theme .btn-buy-md:hover, .light-theme .btn-control-sm:hover, .light-theme .btn-control-md:hover, .light-theme .btn-primary-md:hover,.light-theme .btn-secondary-md:hover, .light-theme .btn-cta-md:hover, .light-theme .avatar-card-btns .accept-friend:hover, .profile-avatar-left .enable-three-dee:hover,.light-theme .btn-generic-back-sm:hover, .light-theme .btn-control-xs:hover, .light-theme.builder-font .refresh-link-icon:hover, .light-theme .btn-primary-lg:hover, .light-theme .details-btns-fixed .btn-secondary-sm:hover {
         background-color: #6e99c9;
         border: solid 1px #000;
         color: #fff;
@@ -1481,6 +1552,52 @@
         text-decoration: underline;
     }
     
+    .light-theme .btn-alert-sm {
+        height: 30px;
+        background: url(/images/btn_red_30h_t1.png) no-repeat;
+        display: inline-block;
+        font-family: Arial,Helvetica,Sans-Serif;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        border-radius: 0;
+        padding: 0px 12px 0 9px;
+        line-height: normal;
+        position: relative;
+        width: unset;
+        color: White;
+    }
+    
+    .light-theme .btn-alert-sm:hover {
+        background-position: 0 -30px;
+        cursor: pointer;
+        text-decoration: none;
+        color: White;
+    }
+    
+    .light-theme .btn-alert-sm:before {
+        content: "";
+        height: 23px;
+        background: url(/images/btn_red_30h_t2.png) no-repeat top right;
+        margin: 0 0 0 4px;
+        display: block;
+        padding: 7px 12px 0 5px;
+        cursor: pointer;
+        color: White;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .light-theme .btn-alert-sm:hover:before {
+        background-position: right -30px;
+        cursor: pointer;
+    }
+    
     
     
     /* Icons */
@@ -1505,6 +1622,10 @@
     
     .icon-blocked img {
         content: var(--blocked);
+    }
+    
+    .icon-blocked:not(:has(img)) {
+        content: var(--missing);
     }
 }
 
@@ -1743,7 +1864,11 @@
             display: none;
         }
         
-        .rbx-header .rbx-navbar-icon-group li, #navbar-stream {
+        #settings-popover {
+            left: -40px !important;
+        }
+        
+        .rbx-header .rbx-navbar-icon-group li:not(.dropdown-menu li), #navbar-stream {
             float: right;
             padding: 0;
             margin: 0;
@@ -4821,6 +4946,378 @@
         }
         }
         
+        /* 2012 */
+
+        if style == 3 {
+            #SmallHeaderContainer {
+                margin: 0;
+                padding: 0;
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                height: 40px;
+                position: fixed;
+                width: 100%;
+                z-index: 900;
+            }
+            
+            #SmallHeaderContainer #AdvertisingLeaderboard {
+                display: none;
+            }
+            
+            #Header {
+                margin: 0;
+                color: inherit;
+                font: inherit;
+                width: unset;
+                text-align: unset;
+            }
+            
+            #Banner {
+                position: relative;
+                background-color: #114081;
+                height: 38px;
+                bottom: 0;
+                margin: 0;
+                padding: 0;
+                background-image: none;
+                text-align: unset;
+            }
+            
+            .BannerCenterContainer {
+                width: 902px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                position: relative;
+            }
+            
+            #Banner #Logo {
+                background: url("/images/btn-logo.png?v=2") top left;
+                display: inline-block;
+                width: 123px;
+                height: 38px;
+                float: left;
+                margin: 0;
+            }
+            
+            #Banner #Logo:hover {
+                background-position: bottom left;
+            }
+            
+            #SmallHeaderContainer #Banner #AuthenticatedUserName {
+                float: left;
+                height: 28px;
+                font-family: Arial;
+                font-size: 11px;
+                font-weight: normal;
+                color: White;
+                background: none;
+                left: 125px;
+                position: absolute;
+                top: auto;
+                width: auto;
+                padding-left: 12px;
+            }
+            
+            #SmallHeaderContainer #Banner #AuthenticatedUserName span {
+                vertical-align: bottom;
+                display: inline-block;
+            }
+            
+            #SmallHeaderContainer #Banner #Alerts {
+                background: Transparent;
+                border: none;
+                position: relative;
+                width: 400px;
+                left: 0;
+                float: right;
+                height: 38px;
+                padding-top: 0;
+            }
+            
+            .SmallHeaderAlertSpaceLeft {
+                background: var(--head_bkg_t1) no-repeat scroll left;
+                height: 28px;
+                right: 2px;
+                padding-left: 3px;
+                float: right;
+            }
+            
+            .SmallHeaderAlertSpaceLeft .AlertSpace {
+                float: left;
+                border: none;
+                position: relative;
+                top: 0;
+                width: auto;
+                margin: 0;
+                padding-right: 60px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: Arial,Helvetica,sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+                background: var(--bg-statbar-right-28h) no-repeat scroll right 0 transparent;
+                height: 28px;
+                padding-left: 9px;
+                padding-top: 1px;
+            }
+            
+            .AlertSpace .MessageAlert {
+                display: inline;
+                float: left;
+                margin-top: 4px;
+                width: unset;
+                height: unset;
+                overflow: unset;
+            }
+            
+            .AlertSpace .FriendsAlert {
+                display: inline;
+                float: left;
+                margin-top: 4px;
+                width: unset;
+                height: unset;
+                overflow: unset;
+                color: inherit;
+            }
+            
+            .AlertSpace .RobuxAlert {
+                display: inline;
+                float: left;
+                margin-top: 4px;
+                height: unset;
+                overflow: unset;
+            }
+            
+            .AlertSpace .TicketsAlert {
+                display: inline;
+                float: left;
+                margin-top: 4px;
+                padding: 0;
+                width: unset;
+                overflow: unset;
+                height: unset;
+            }
+            
+            .SmallHeaderAlertSpaceLeft .AlertSpace .MessageAlert {
+                border: none;
+                background: none;
+                display: inline;
+                float: left;
+            }
+            
+            .SmallHeaderAlertSpaceLeft .AlertSpace .FriendsAlert {
+                border: none;
+                background: none;
+                display: inline;
+                float: left;
+            }
+            
+            .SmallHeaderAlertSpaceLeft .AlertSpace .RobuxAlert {
+                border: none;
+                background: none;
+                display: inline;
+                float: left;
+                width: auto;
+                padding: 0;
+            }
+            
+            .SmallHeaderAlertSpaceLeft .AlertSpace .TicketsAlert {
+                border: none;
+                background: none;
+                display: inline;
+                float: left;
+                margin-top: 4px;
+            }
+            
+            .AlertSpace .icons, .AlertSpace .icons a {
+                display: none;
+            }
+            
+            .AlertSpace .message_icon {
+                display: none;
+            }
+            
+            .AlertSpace .friends_icon {
+                display: none;
+            }
+            
+            .AlertSpace .robux_icon {
+                display: none;
+            }
+            
+            .AlertSpace .tickets_icon {
+                display: none;
+            }
+            
+            .SmallHeaderAlertSpaceLeft .AlertSpace a {
+                padding-right: 10px;
+                padding-left: 19px;
+                background: var(--head_infobox_icons) no-repeat 0 0;
+                position: static;
+            }
+            
+            .SmallHeaderAlertSpaceLeft .AlertSpace a:hover, #Header .AlertSpace a:active {
+                text-decoration: none;
+            }
+            
+            .SmallHeaderAlertSpaceLeft .AlertSpace .MessageAlert a  {
+                color: #444;
+                background-position: -2px -3px;
+            }
+            
+            .SmallHeaderAlertSpaceLeft .AlertSpace .FriendsAlert a {
+                color: #05b;
+                background-position: -2px -82px;
+            }
+            
+            .SmallHeaderAlertSpaceLeft .AlertSpace .RobuxAlert a {
+                color: #080;
+                background-position: -1px -43px;
+            }
+            
+            .SmallHeaderAlertSpaceLeft .AlertSpace .TicketsAlert a {
+                color: #a61;
+                background-position: -2px -123px;
+            }
+            
+            .SmallHeaderAlertSpaceLeft .AlertSpace .MessageAlert a:hover {
+                color: #aaa;
+                background-position: -2px -23px;
+            }
+            
+            .SmallHeaderAlertSpaceLeft .AlertSpace .FriendsAlert a:hover {
+                color: #0cf;
+                background-position: -2px -102px;
+            }
+            
+            .SmallHeaderAlertSpaceLeft .AlertSpace .RobuxAlert a:hover {
+                color: #0d0;
+                background-position: -1px -63px;
+            }
+            
+            .SmallHeaderAlertSpaceLeft .AlertSpace .TicketsAlert a:hover {
+                color: #fb6;
+                background-position: -2px -143px;
+            }
+            
+            #SmallHeaderContainer #Banner #AuthenticationButton {
+                height: 20px;
+                font-weight: normal;
+                z-index: 1;
+                position: relative;
+                margin-top: 0;
+                top: 5px;
+                left: 390px;
+                float: right;
+            }
+            
+            #SmallHeaderContainer #Banner #AuthenticationButton a {
+                background: var(--btn_blue_18h) repeat-x;
+                font-weight: bold;
+                color: White;
+                font-family: Arial;
+                font-size: 10px;
+                display: block;
+                width: 40px;
+                margin-left: 7px;
+                text-align: center;
+                margin-top: 5px;
+                height: 15px;
+                padding-top: 2px;
+                float: none;
+            }
+            
+            #SmallHeaderContainer #Banner #AuthenticationButton a:hover {
+                background-position: 0 -18px;
+                text-decoration: none;
+            }
+            
+            #Header .Navigation {
+                position: fixed;
+                width: 100%;
+                height: 30px;
+                background: var(--topNav_2012);
+                background-position: 0 0;
+                text-align: center;
+                line-height: 20px;
+            }
+            
+            .Navigation li {
+                display: inline-block;
+                margin: 0;
+                padding: 6px 15px 0;
+                height: 24px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            
+            .Navigation li:hover {
+                background: var(--topNav_2012);
+                background-position: 0 30px;
+            }
+            
+            .Navigation ul li {
+                float: left;
+                position: relative;
+            }
+            
+            .Navigation ul li:nth-child(9) {
+                display: none;
+            }
+            
+            .Navigation ul li a, .Navigation ul li a:visited {
+                border: none;
+                font-size: 16px;
+                padding: 0;
+            }
+            
+            #Header a:hover {
+                text-decoration: none;
+            }
+            
+            #gamesMenuToggle {
+                display: none !important;
+            }
+            
+            .subMenu {
+                width: 900px;
+                height: 30px;
+                border: none;
+                text-align: center;
+                background: #363636;
+                z-index: 200;
+                margin: 0 auto;
+            }
+            
+            .subMenu ul {
+                margin: 0 0 0 27px;
+            }
+            
+            .subMenu > ul > li {
+                height: 30px;
+                margin: 0 2px;
+            }
+            
+            .subMenu > ul > li:hover {
+                background: var(--topNav_black);
+                background-position: 0 30px;
+            }
+            
+            .subMenu a, .subMenu a:visited {
+                border: none;
+            }
+            
+            .subMenu .subMenuItemselected {
+                border: none;
+            }
+            
+            .subMenu a:hover {
+                background: none;
+                text-decoration: none;
+            }
+        }
+        
         /* Footer */
         
         .Legalese {
@@ -4875,6 +5372,54 @@
             #Footer .SEOGenreLinks {
                 padding: 1em 0 2em 0;
                 font-size: 11px;
+            }
+            
+            #Footer .Legalese {
+                color: #555;
+                font-size: 10px;
+                margin-bottom: 1em;
+            }
+            
+            #Footer .Legalese {
+                font-size: 10px;
+                margin-bottom: 1em;
+            }
+        }
+        
+        if style == 3 {
+            #Footer {
+                background: #e6e6e6;
+                text-align: center;
+                font-size: 13px;
+                color: #aaa;
+                margin: 0;
+                width: 100%;
+                padding: 2em 0 0 0;
+                position: absolute;
+            }
+            
+            #Footer hr {
+                display: none;
+            }
+            
+            #Footer .FooterNav {
+                color: #bbb;
+            }
+            
+            #Footer .SEOGenreLinks {
+                padding: 1em 0 2em 0;
+                font-size: 11px;
+            }
+            
+            #Footer .legal {
+                text-align: left;
+                width: 900px;
+                margin: 0 auto;
+            }
+            
+            .Legalese {
+                padding: 0 0 12px;
+                margin: 0;
             }
             
             #Footer .Legalese {
@@ -5313,6 +5858,15 @@
 @-moz-document domain("www.roblox.com") {
     /* Chat */
 
+
+    .chat-container {
+        box-sizing: unset;
+        position: relative;
+        z-index: 1050;
+    }
+    
+    
+
     /* White Tabs */
 
     .chat-container .chat-header .chat-header-label, .chat-container:not(.collapsed) .chat-windows-header .chat-header-action {
@@ -5364,6 +5918,9 @@
         float: right;
         display: flex;
         background: none;
+        position: relative;
+        z-index: 1061;
+        height: unset;
     }
 
     .chat-container .chat-header .chat-header-label, .chat-container.collapsed .chat-header .chat-header-label {
@@ -5444,6 +6001,7 @@
     .light-theme .chat-main {
         background: none;
         color: inherit;
+        z-index: unset;
     }
 
     .chat-main .chat-body {
@@ -5461,7 +6019,6 @@
         max-height: none;
         width: 100%;
         position: relative;
-        top: -15px;
     }
     
     .chat-container #mCSB_1_scrollbar_vertical {
@@ -5546,8 +6103,8 @@
     #dialogs {
         position: fixed;
         left: 0;
-        bottom: 47px;
-        z-index: 1050;
+        right: 160px;
+        bottom: 50px;
     }
     
     .collapsed #dialogs {
@@ -5561,6 +6118,7 @@
     #dialogs > div:has(.collapsed) {
         bottom: 0;
         margin: 0;
+        vertical-align: bottom;
     }
     
     #dialogs > div:has(div) {
@@ -5574,23 +6132,26 @@
     
     .dialog-container.dialog-visible {
         position: unset;
-        background: none;
         color: inherit;
         width: 208px;
         border-radius: 0;
         box-shadow: none;
-        height: 298px;
+        height: unset;
         opacity: 1;
+        padding: 5px;
+        background: #e6e6e6;
+        overflow: unset;
     }
     
     .dialog-container.collapsed {
         width: unset;
         height: 18px;
+        padding: 0;
+        background: none;
     }
     
     .dialog-container .dialog-main {
-        padding: 5px;
-        background: #e6e6e6;
+        position: unset;
     }
     
     .light-theme .dialogs .dialog-container .dialog-header {
@@ -5599,12 +6160,13 @@
         text-decoration:none;
         padding-left:2px;
         height:19px;
-        width:206px;
+        width:216px;
         cursor:pointer;
         overflow: hidden;
-        margin-top: -5px;
-        margin-left: -5px;
-        margin-right: -5px;
+        position: absolute;
+        top: -19px;
+        left: 0;
+        right: 0;
     }
     
     .dialog-container .dialog-header .chat-header-label {
@@ -5628,6 +6190,7 @@
         cursor: pointer;
         width: unset !important;
         margin: 0;
+        position: unset;
     }
     
     .light-theme .dialogs .dialog-container.collapsed .dialog-header:hover {
@@ -5684,18 +6247,7 @@
     }
     
     .dialog-container .dialog-header .chat-header-action .icon-chat-info-white {
-        background: none;
-        width: unset;
-        height: unset;
-    }
-    
-    .dialog-container .dialog-header .chat-header-action .icon-chat-info-white:before {
-        content: "Settings";
-        color: #fff;
-        font-size: 10px;
-        position: relative;
-        top: -3px;
-        font-family: verdana;
+        display: none;
     }
     
     .light-theme .dialogs .dialog-container .dialog-body {
@@ -5781,6 +6333,7 @@
     
     .light-theme .dialogs .dialog-container .dialog-message-container.message-inbound .dialog-message-author {
         color: #095fb5;
+        font: inherit;
         font-weight: bold;
         margin-bottom: 0;
         line-height: normal;
@@ -5790,6 +6343,7 @@
     
     .group-dialog .dialog-message-container.message-inbound .dialog-message-author span {
         color: inherit;
+        font: inherit;
     }
     
     .group-dialog .dialog-message-container.message-inbound .dialog-message-author span:after {
@@ -5800,6 +6354,10 @@
     
     .light-theme .dialogs .dialog-container .dialog-message-container.message-inbound .dialog-message-author ~ .dialog-message:before, .light-theme .dialogs .dialog-container .dialog-message-container.message-inbound .dialog-message-author ~ #link-card .dialog-message:before {
         display: none;
+    }
+    
+    .dialog-container .dialog-message-container .dialog-message span {
+        display: inline;
     }
     
     .dialog-container .dialog-message-container .dialog-message span.message-piece {
@@ -5837,14 +6395,407 @@
         margin: 0;
     }
     
+    /* Settings */
+
+    .dialog-container.dialog-visible .details-dialog-container {
+        display: block !important;
+        height: unset;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .dialog-container.collapsed .details-dialog-container {
+        display: none !important;
+    }
+    
+    .dialog-container.dialog-visible .details-dialog-container .chat-windows-header {
+        display: none;
+    }
+    
+    .dialog-container.dialog-visible .details-dialog-container .details-container {
+        background: none;
+        color: inherit;
+        height: unset;
+        width: unset;
+    }
+    
+    .dialog-container.dialog-visible .details-dialog-container .mCustomScrollBox {
+        max-height: unset !important;
+    }
+    
+    .light-theme .details-members-label {
+        display: none;
+    }
+    
+    .details-members-container {
+        margin: 0;
+    }
+    
+    .light-theme .dialog-container:not(:has(.dialog-message-author)) .details-members-container .add-friends-option, .light-theme .dialog-container:not(:has(.dialog-message-author)) .details-btns {
+        display: none;
+    }
+    
+    .light-theme .friends-list-container {
+        background: none;
+        color: inherit;
+    }
+    
+    .friends-list-container .friend-container .friend-action {
+        position: absolute;
+        top: 25%;
+        right: 5px;
+    }
+    
+    .friends-list-container .friend-container .friend-action .friend-action-more-option {
+        display: none;
+    }
+    
+    .friends-list-container .friend-container .friend-action .friend-menu {
+        display: inline-block !important;
+        position: unset;
+    }
+    
+    .friends-list-container .friend-container .friend-action .friend-menu .dropdown-menu {
+        display: inline-block !important;
+        position: unset;
+        min-width: unset;
+        border-radius: 0;
+        box-shadow: none;
+        background: none;
+        font: inherit;
+        float: none;
+        color: inherit;
+    }
+    
+    .friends-list-container .friend-container .friend-action .friend-menu .dropdown-menu li:first-child {
+        display: none;
+    }
+    
+    .friends-list-container .friend-container .friend-action .friend-menu .dropdown-menu li {
+        width: unset;
+        display: inline;
+        color: inherit;
+        padding: 0;
+        background: none;
+    }
+    
+    .friends-list-container .friend-container .friend-action .friend-menu .dropdown-menu li a {
+        color: red;
+        width: unset;
+        padding: 0;
+        font: inherit;
+        display: inline;
+    }
+    
+    .dialog-container .chat-dialog-alert {
+        display: none;
+    }
+    
+    /* Parties */
+
+    #dialogs > div#newGroup {
+        float: right;
+        margin: 0;
+    }
+    
+    #dialogs > div#newGroup .dialog-container {
+        position: absolute;
+        right: -150px !important;
+        bottom: 30px;
+        width: 258px;
+    }
+    
+    .light-theme #newGroup .chat-windows-header {
+        background:transparent var(--chat_tab_blue) no-repeat left top;
+        display:block;
+        text-decoration:none;
+        padding-left:2px;
+        height:21px;
+        width:245px;
+        cursor:pointer;
+        background-color: unset;
+        color: inherit;
+        margin: 0;
+        float: none;
+        box-sizing: unset !important;
+        position: absolute;
+        top: -21px;
+        left: -1px;
+        right: 0;
+    }
+    
+    .light-theme #newGroup .chat-windows-header .chat-header-label {
+        background: transparent var(--chat_tab_blue_r) no-repeat right top;
+        display: block;
+        height: 17px;
+        padding: 2px 15px 2px 7px;
+        text-decoration: none;
+        color: #fff;
+        width: 100%;
+        box-sizing: unset;
+        margin: 0;
+        float: none;
+    }
+    
+    #newGroup .chat-windows-header .chat-header-label span {
+        float: none;
+    }
+    
+    #newGroup:not(.collapsed) .chat-windows-header .chat-header-action {
+        position: absolute;
+        right: -15px;
+        top: 2px;
+        padding: 0;
+        height: 19px;
+        background: none;
+    }
+    
+    #newGroup .chat-windows-header .chat-header-action span[class^="icon"] {
+        background: var(--closeChatWindow);
+        width: 12px;
+        height: 11px;
+        float: none;
+    }
+    
+    .light-theme .create-chat-container .details-header-container {
+        background: #e6e6e6;
+        padding: 5px;
+        color: inherit;
+        height: unset;
+    }
+    
+    .light-theme .create-chat-container .select-friends-container .details-header-container {
+        display: none;
+    }
+    
+    .select-friends-container, .light-theme .details-btns-fixed {
+        background: #e6e6e6;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .select-friends-container {
+        height: unset;
+    }
+    
+    .light-theme .details-btns-fixed {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: unset;
+        height: unset;
+    }
+    
+    .conversation-title-container .details-label {
+        display: none;
+    }
+    
+    .details-header-container .details-input-container {
+        width: unset;
+        float: none;
+    }
+    
+    .select-friends-container .select-friends-list {
+        width: unset;
+        overflow: unset;
+    }
+    
+    .select-friends-container .select-friends-list .mCustomScrollBox {
+        height: unset;
+        max-width: none;
+        overflow: unset;
+    }
+    
+    .select-friends-container .select-friends-list .mCustomScrollBox .mCSB_container {
+        top: unset !important;
+        overflow: unset;
+    }
+    
+    .select-friends-container .select-friends-list .mCustomScrollBox .mCSB_container .friends-list-container {
+        overflow: scroll;
+        overflow-x: hidden;
+        height: 216px;
+        background: none;
+        color: inherit;
+    }
+    
+    .select-friends-container .select-friends-list .mCSB_scrollTools {
+        display: none !important;
+    }
+    
+    .light-theme .friends-list-container .friend-container {
+        color: inherit;
+        position: relative;
+        padding: 1px;
+    }
+    
+    .friends-list-container .friend-container .friend-avatar {
+        margin: 0;
+        float:none;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .friends-list-container .friend-container .friend-info-action {
+        width: unset;
+        display: inline-block;
+        min-height: unset;
+        padding: 0;
+        float: none;
+        border: none;
+    }
+    
+    .friends-list-container .friend-container .friend-info-action .dynamic-overflow-container.no-wrap {
+        display: inline;
+    }
+    
+    .light-theme .friends-list-container .friend-container .friend-info .friend-status {
+        display: inline;
+        font: inherit;
+        color: gray;
+        margin-left: 6px;
+    }
+    
+    .friends-list-container .friend-container .friend-info {
+        display: inline;
+    }
+    
+    .friends-list-container .friend-container .friend-info .friend-name {
+        font: inherit;
+        margin: 0;
+        flex: unset;
+        display: inline;
+        font-weight: bold;
+    }
+    
+    .friends-list-container .friend-container .checkbox {
+        width: unset;
+        margin: 0;
+        position: absolute;
+        right: 5px;
+        top: 15%;
+    }
+    
+    .light-theme .details-btns-fixed {
+        text-align: center;
+    }
+    
+    .details-btns-fixed .details-btn-cancel {
+        width: unset;
+        margin-right: 3px;
+        float: none;
+        display: inline-block;
+    }
+    
+    .details-btns-fixed .details-btn-save  {
+        width: unset;
+        float: none;
+        display: inline-block;
+    }
+    
+    .conversation-title-container .details-input-container:before {
+        content: "Name: ";
+        font-weight: bold;
+    }
+    
+    .conversation-title-container .conversation-title-input {
+        all: revert !important;
+    }
+    
+    .conversation-title-container .conversation-title-input::placeholder {
+        opacity: 0;
+    }
+    
+    /* Group Settings */
+
+    .details-general-label, .conversation-title-container {
+        display: none;
+    }
+    
+    .details-members-container {
+        text-align: center;
+    }
+    
+    #group-members {
+        text-align: left;
+    }
+    
+    .light-theme .details-members-container .add-friends-option {
+        background: var(--btn_green21h_l) no-repeat left top;
+        padding:0 0 0 2px;
+        color: inherit;
+        display: inline-block;
+    }
+    
+    .details-members-container .add-friends-option .add-friends-icon {
+        display: none;
+    }
+    
+    .details-members-container .add-friends-option .add-friends-label {
+        display:block;
+        padding:2px 14px 4px 10px;
+        background:var(--btn_green21h_r) no-repeat right top;
+        color:White;
+        font:verdana;
+        font-weight:bold;
+        text-decoration:none;
+        width: unset;
+        height: unset;
+        line-height: normal;
+        float: none;
+    }
+    
+    .light-theme .details-btns {
+        background: none;
+        color: inherit;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .light-theme .details-btns #leave-group {
+        background: var(--btn_red21h_l) no-repeat left top;
+        padding:0 0 0 2px;
+        height: unset;
+        font: inherit;
+        color: inherit;
+    }
+    
+    .light-theme .details-btns #leave-group:before {
+        display:block;
+        padding:2px 14px 4px 10px;
+        background:var(--btn_red21h_r) no-repeat right top;
+        color:White;
+        font:verdana;
+        font-weight:bold;
+        text-decoration:none;
+        margin: 0;
+    }
+    
+    .light-theme .details-btns #leave-group {
+        font-size: 0;
+    }
+    
+    .light-theme .details-btns #leave-group:before {
+        content: "Leave Party";
+        font-size: 12px;
+        position: unset;
+    }
+    
+    .friends-list-container .friend-container .friend-action .friend-menu .dropdown-menu li {
+        
+    }
+    
     /* Images */
 
     body {
         --chat_tab_white: url("data:image/gif;base64,R0lGODlhAgAmAMQfANfX19vb2+Xl5dPT0+vr6/X19fn5+d7e3tzc3OPj4/Hx8fPz8/b29uDg4OHh4dbW1uTk5Pz8/O/v7/j4+Ozs7NTU1Obm5urq6szMzOnp6e7u7vv7+9LS0tnZ2aampv///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOkNDMjgxNkJCMzk4REUwMTFBNDUzQjYxREFGRjg5MTYyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkExMDQ2QzgzOEQzQzExRTBCQzI0RTAwNDc4RTY0QjhEIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkExMDQ2QzgyOEQzQzExRTBCQzI0RTAwNDc4RTY0QjhEIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUuMSBXaW5kb3dzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Q0QyODE2QkIzOThERTAxMUE0NTNCNjFEQUZGODkxNjIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Q0MyODE2QkIzOThERTAxMUE0NTNCNjFEQUZGODkxNjIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGgn56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhnZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8uLSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQBAAAfACwAAAAAAgAmAAAFO+DneZgneJYHeYnneI13eIgXeJ0HeI9XeQMPRzgS4TwbTwTpMXgmHoan4Fl4FB6JR+OheAiejOeyHYUAADs=");
         --chat_tab_white_r: url("data:image/gif;base64,R0lGODlhggMmANUsAPX19dzc3ODg4Pb29uHh4fj4+OPj4/n5+fv7++bm5uTk5Pz8/Ofn5/39/ejo6P7+/u3t7erq6sfHx76+vsHBwcDAwPDw8L+/v+Li4r29vd3d3fT09N7e3tTU1O/v7+np6fPz89bW1tPT0/Hx8ezs7NnZ2dfX19vb2+7u7uvr69LS0qampv///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOkNBMjgxNkJCMzk4REUwMTFBNDUzQjYxREFGRjg5MTYyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjlCMUY4QzZCOEQzQzExRTA5OTBCRDMzRTQyMUZFNzJGIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjlCMUY4QzZBOEQzQzExRTA5OTBCRDMzRTQyMUZFNzJGIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUuMSBXaW5kb3dzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Q0IyODE2QkIzOThERTAxMUE0NTNCNjFEQUZGODkxNjIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Q0EyODE2QkIzOThERTAxMUE0NTNCNjFEQUZGODkxNjIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGgn56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhnZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8uLSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQBAAAsACwAAAAAggMmAAAG/8CVcEgsGo/IpHLJbDqf0Kh0Sq1ar9isdsvter/gsHhMLpvP6HSXxW6zE464fE6v2+/4vH7P7/v/gIGCg4SFhoeIiYqLjI2Oj5CRkpOUlZaXmIkYFCtubQygoaKjpKWmp6ipqqusra6vsLGys7S1tre4ubq7vL2+v8DBwsPExcbHugScniwJzs/Q0dLT1NXW19jZ2tvc3d7f4OHi4+Tl5ufo6err7O3u7/Dx8vP09ekCFZ1uCvz9/v8AAwocSLCgwYMIEypcyLChw4cQI0qcSLGixYsYM2rcyLGjx48gQ4ociZFDPjcGUqpcybKly5cwY8qcSbOmzZs4c+rcybOnz/+fQIMKHUq0qNGjSJMqXcq0qdOnUI1quKCPBYGrWLNq3cq1q9evYMOKHUu2rNmzaNOqXcu2rdu3cOPKnUu3rt27ePPq3cu3r9+6JyboE0C4sOHDiBMrXsy4sePHkCNLnky5suXLmDNr3sy5s+fPoEOLHk26tOnTqFOrXj06cCcOsGPLnk27tu3buHPr3s27t+/fwIMLH068uPHjyJMrX868ufPn0KNLn069uvXr0EtkWBGgu/fv4MOLH0++vPnz6NOrX8++vfv38OPLn0+/vv37+PPr38+/v///AAYo4IAE+mfCCickqOCCDDbo4IMQRijhhBRWaOGFGGao4YYcduj/4YcghijiiCSWaOKJKKao4oostujiizCuuEIJNNZo44045qjjjjz26OOPQAYp5JBEFmnkkUgmqeSSTDbp5JNQRinllFRWaeWVWGap5ZZWrmDCl2CGKeaYZJZp5plopqnmmmy26eabcMYp55x01mnnnXjmqeeefPbp55+ABirooIQWamigK4Sg6KKMNuroo5BGKumklFZq6aWYZqrpppx26umnoIYq6qiklmrqqaimquqqrLbq6quwxsrqCh3UauutuOaq66689urrr8AGK+ywxBZr7LHIJqvsssw26+yz0EYr7bTUVmvttdhmq+223F67ggjghivuuOSWa+656Kar/+667Lbr7rvwxivvvPTWa++9+Oar77789uvvvwAHLPDABBds8MECr6DCwgw37PDDEEcs8cQUV2zxxRhnrPHGHHfs8ccghyzyyCSXbPLJKKes8sost+zyyzDHLHPLCs9s880456zzzjz37PPPQAct9NBEF52zGkgnrfTSTDft9NNQRy311FRXbfXVWGet9dZcd+3112CHLfbYZJddBTNtLPDA2my37fbbcMct99x012333XjnrffefPft99+ABy744IQXbvjhiCeu+OKMN+7445BHLvngA0iANgsNZK755px37vnnoIcu+uikl2766ainrvrqrLfu+uuwxy777LTXbv/77bjnrvvuvPfu++/Azw6A5cwsYPzxyCev/PLMN+/889BHL/301Fdv/fXYZ6/99tx37/334Icv/vjkl2/++einr/767Lcf/gbEu4HA/PTXb//9+Oev//789+///wAMoAAHSMACGvCACEygAhfIwAY68IEQjKAEJ0jBClrwghjMoAYfCIL4seEAIAyhCEdIwhKa8IQoTKEKV8jCFrrwhTCMoQxnSMMa2vCGOMyhDnfIwx768IdADKIQh0jEIhrxiD0cgQcLwMQmOvGJUIyiFKdIxSpa8YpYzKIWt8jFLnrxi2AMoxjHSMYymvGMaEyjGtfIxja68Y1wjKMc56hGC8T/bwB4zKMe98jHPvrxj4AMpCAHSchCGvKQiEykIhfJyEY68pGQjKQkJ0nJSlrykpjMpCY3yclOevKTl0QB8QBAylKa8pSoTKUqV8nKVrrylbCMpSxnScta2vKWuMylLnfJy1768pfADKYwh0nMYhrzmMhMpjKXSUxRsgAE0IymNKdJzWpa85rYzKY2t8nNbnrzm+AMpzjHSc5ymvOc6EynOtfJzna6853wjKc850nPetrznvEkwQpGwM9++vOfAA2oQAdK0IIa9KAITahCF8rQhjr0oRCNqEQnStGKWvSiGM2oRjfK0Y569KMgDalIR+rRFXjgpChNqUpXytKWuvSl/zCNqUxnStOa2vSmOM2pTnfK05769KdADapQh0rUohr1qEhNqlKXytSmOjWpK0CBVKdK1apa9apYzapWt8rVrnr1q2ANq1jHStaymvWsaE2rWtfK1ra69a1wjatc50rXutr1rnjNK11XQIK++vWvgA2sYAdL2MIa9rCITaxiF8vYxjr2sZCNrGQnS9nKWvaymM2sZjfL2c569rOgDa1oR0vaz64gBahNrWpXy9rWuva1sI2tbGdL29ra9ra4za1ud8vb3vr2t8ANrnCHS9ziGve4yE2ucpfL3OY697nKXcEHpkvd6lr3utjNrna3y93ueve74A2veMdL3vKa97zoTYivetfL3va6973wja9850vf+tr3vvjNr37ru4II+Pe/AI4AdAdM4AIb+MAITrCCF8zgBjv4wRCOsISju1UIWPjCGM6whjfM4Q57+MMgDrGIR0ziEpv4xChOsYpXzOIWu/jFMI6xjGdM4xrb+MY4zrGOd8zjHrfYbEAOspCHTOQiG/nISE5yGoIAADs=");
-        --chat_tab_blue: url("data:image/gif;base64,R0lGODlhBAATANUqAEOg/DaK3jaV9DaR6wWB+wR99TaP5zaG1DaD0HOy70+n/kKY7zaJ2wBMlzaH2DaS7hmJ+TaN5DaM4XGz9AB++x6O/TaF0jiY93eizTaU8QB79QB8+ABt2QBiwwBr1QBp0QApUQBnzQBkxgBlyQB58QB37QB16QBz5QBx4QBv3f///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3NTA1MjIxNThFMzgxMUUwODM4RUZGNTJDNTk4Rjg4NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3NTA1MjIxNjhFMzgxMUUwODM4RUZGNTJDNTk4Rjg4NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjc1MDUyMjEzOEUzODExRTA4MzhFRkY1MkM1OThGODg2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjc1MDUyMjE0OEUzODExRTA4MzhFRkY1MkM1OThGODg2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAQAAKgAsAAAAAAQAEwAABjhAlQqTUE0UFQCAQFlANptLQaMRkK6ZkvZh6g5OYANqHEmZJZx0wMNmfN6OkPwwqltEeERn3wD5gwA7");
-        --chat_tab_blue_r: url("data:image/gif;base64,R0lGODlhgAMTANU6AAB++wB//Wy2/0B4sUB2rEB3rhKH+wBFiUB6tABEhgBChBKF+Al66gl+8QAmTBKC8gBAfwiD/VCCtTdsoQBRoRKI/Ql24gl45kB4sABGjAmB+G+3/xKE9hJ/6wl87gmE/UB1qwA/fUB5swmD+1+v/xJ95wBBgRKB7gmA9QA+ewB8+AB79QB58QB37QB16QBz5QBx4QBt2QBiwwBr1QBp0QApUQBnzQBkxgBlyQBv3f///wAAAAAAAAAAAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1RDJBRDNBQzhFMzgxMUUwODBCQzg3RDU2MzEyRDlBNCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1RDJBRDNBRDhFMzgxMUUwODBCQzg3RDU2MzEyRDlBNCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjVEMkFEM0FBOEUzODExRTA4MEJDODdENTYzMTJEOUE0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjVEMkFEM0FCOEUzODExRTA4MEJDODdENTYzMTJEOUE0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAQAAOgAsAAAAAIADEwAABv/AjWBILBqPyKRyyWw6n9CodEqtWq/YrHbL7Xq/4LB4TC6bz+i0OkuS6N7wdyRAr9vv+Lx+z+/7/4CBgoOEhYaHiImKi4yNjo+QkZKTlJWWl5iZmpuKHxUIcXAAo6SlpqeoqaqrrK2ur7CxsrO0tba3uLm6u7y9vr/AwcLDxMXGx8jJyrsjBiKhOirS09TV1tfY2drb3N3e3+Dh4uPk5ebn6Onq6+zt7u/w8fLz9PX29/j56xoLA6ErAAMKHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTGlFwwBCHhcuXMGPKnEmzps2bOHPq3Mmzp8//n0CDCh1KtKjRo0iTKl3KtKnTp1CjSp1KtWrSBg8KwGnBtavXr2DDih1LtqzZs2jTql3Ltq3bt3Djyp1Lt67du3jz6t3Lt6/fv4ADCx6M18MJAm9cKF7MuLHjx5AjS55MubLly5gza97MubPnz6BDix5NurTp06hTq17NurXr17Bjn2bQAYSOF7hz697Nu7fv38CDCx9OvLjx48iTK1/OvLnz59CjS59Ovbr169iza9/Ovbv379YvlJgAo7z58+jTq1/Pvr379/Djy59Pv779+/jz69/Pv7///wAGKOCABBZo4IEIJqjgggwSaAEFOUQo4YQUVmjhhRhmqOGGHHbo/+GHIIYo4ogklmjiiSimqOKKLLbo4oswxijjjDTWaOONOMaYQQw89ujjj0AGKeSQRBZp5JFIJqnkkkw26eSTUEYp5ZRUVmnllVhmqeWWXHbp5ZdghinmmFweMMOZaKap5ppstunmm3DGKeecdNZp55145qnnnnz26eefgAYq6KCEFmrooYgmquiijDbq6KEJ0CDppJRWaumlmGaq6aacdurpp6CGKuqopJZq6qmopqrqqqy26uqrsMYq66y01mrrrbjmKqsCNvTq66/ABivssMQWa+yxyCar7LLMNuvss9BGK+201FZr7bXYZqvtttx26+234IYr7rjkdmsCDuimq9Tuuuy26+678MYr77z01mvvvfjmq+++/Pbr778AByzwwAQXbPDBCCes8MIMN+zwwwhDcMPEFFds8cUYZ6zxxhx37PHHIIcs8sgkl2zyySinrPLKLLfs8sswxyzzzDTXbPPNOOes88whyODzz0AHLfTQRBdt9NFIJ6300kw37fTTUEct9dRUV2311VhnrfXWXHft9ddghy322GSX7XUKNaSt9tpst+3223DHLffcdNdt991456333nz37fffgAcu+OCEF2744YgnrvjijDfu+OOQJ+5AEAA7");
+        --chat_tab_blue: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAVCAYAAABsZT8HAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHBJREFUeNpi8Fn2X6ts9/9dLNde/Zv58guDDcu9V1/NXnNzMjAx/PrC9uXnPyDj71+G/0DMBCQZQBjI+MPA8O8PkPEPKPIPLoUi8g9FzR9kkf9wNX+RRP5j6gKb/A9mKYjxj4GF4dYWBoa3txgAAgwAsvxXKyFNdoQAAAAASUVORK5CYII=");
+        --chat_tab_blue_r: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA4IAAAAVCAYAAAATglAHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXpJREFUeNrs289qU0EUwOEzbYiBEiOIWXTnptDX6NYHUIo+RkVa2ujd+AZ9i7yDTyMliH8wVaLJneb2LoK0dp8737ee2ZzdjzOT3n/Ki4joBwAAAFst54jZdUwuX0T10Ln05OMq/1i0FwAAANhe+8OIw2cpRo9iMn2Z/huDKS7+SkAAAIAuxuCr3er+EDxfCEEAAIBOxWBqY3DQxGCvuhuCZ7+EIAAAQBdjcNxsBtNketyv/g3B059CEAAAoIsx+LjZDO7EaNDE4KDahOC7b0IQAACgszG4s4nB13tVG4JvvwhBAACArsfgeLeNwTfDKsXJlRAEAAAoIgZ7Mf+TJ72oVyYCAADQcZ+/r9uvrmM2X31Yh+DSRAAAAIqIwXX//f4aQhAAAKAk9UoIAgAAlBWCy/BHEAAAoCTZRhAAAKAst09Ds40gAABAMWwEAQAACuOPIAAAQGkh6GkoAABAWXLdhGBtEAAAAAWFYIrnR9kkAAAACvH0IG4EGADpOGxw1KWR5QAAAABJRU5ErkJggg==");
         --closeChatWindow: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcGxfAAAAdElEQVQoz42QwQnAMAhF3SNLCJknYxRyKmTgzvB6qCnWmtKAB7//Sb4CiNUGqOtnqc0EkCnuXO8IkJqGeUSA4kQPaaKXuakmw9hX/6UMepkjIEBLgOY9sghIkukB6I8M+nWlujjEfaWRBQzQiBl6MHuoz/4E92bJeKypSmkAAAAASUVORK5CYII=");
+        --btn_green21h_l: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAVCAYAAABsZT8HAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEtJREFUeNpiZNjEwMbAwFDHwvCPoRHIqAAxkoEMBhaGvwyiMAYDhPGHCMZv3CK/STEHymAC2v4a5AIQYy6IwcxgzHCY4T8DN0CAAQBVOBsvfuaAkQAAAABJRU5ErkJggg==");
+        --btn_green21h_r: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA4IAAAAVCAYAAAATglAHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPFJREFUeNrs2lEGQkEYhuF/aBHRmpKINhNxVnIukoikNXURLaEynXSR2kHzPw+HcS6/u9dMiVOcI2ISAAAAtGZdp7X7/VniGNU2AAAADcfg7DsGSxyEIAAAQPMxOP/EYIm9EAQAAEgRg4t3DJbYCUEAAIA0MbisXYmNEAQAAMgUgyV6IQgAAJDJKO5GAAAAEIIAAAA0HII3IwAAAOQKQTeCAAAAyULQjSAAAIAQBAAAoOUQ9DQUAABACAIAACAEAQAAEIIAAAAIQQAAAP4gBB9GAAAASOQqBAEAAHLpXyF4GQ5jWwAAADTt1X7b4Vs9BRgALWQvT31IxoIAAAAASUVORK5CYII=");
+        --btn_red21h_l: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAVCAYAAABsZT8HAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MUQ0NzZCNDNCMzQ3MTFERjhCMkVFRDc4NTUyRkU5M0MiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MUQ0NzZCNDRCMzQ3MTFERjhCMkVFRDc4NTUyRkU5M0MiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxRDQ3NkI0MUIzNDcxMURGOEIyRUVENzg1NTJGRTkzQyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxRDQ3NkI0MkIzNDcxMURGOEIyRUVENzg1NTJGRTkzQyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmSMckIAAABuSURBVHjaYvyvxcDGwMBQx/BHk6EdiP8zftdgeAUUEWX8pMbwH8hgYHyrAmU8V4IyHihAGTfloIxL0hAGy89/DGDA8gPO+Atl/PyLLgVXDJf69Q+NwQRkvAZxmH7/Z5gLxAwsf/4x1ANl2AACDABk/TF2ZtkyigAAAABJRU5ErkJggg==");
+        --btn_red21h_r: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA4EAAAAVCAYAAAD4tesEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MUQ0NzZCNDdCMzQ3MTFERjhCMkVFRDc4NTUyRkU5M0MiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MUQ0NzZCNDhCMzQ3MTFERjhCMkVFRDc4NTUyRkU5M0MiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxRDQ3NkI0NUIzNDcxMURGOEIyRUVENzg1NTJGRTkzQyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxRDQ3NkI0NkIzNDcxMURGOEIyRUVENzg1NTJGRTkzQyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pou4lEcAAAEaSURBVHja7NwxSgNBFIDhHdzCJo1VKgkSiOZcHkNY3MvZ2pgQRLCRFME60Y07WUghIV7Aed8HU2033c97OynPq1wBAABQkqZ6ye1fH9L+TgQCAACUGIIXi/MQTNtbEQgAAFBqCF4uT0Ow7nq3AgAAUKjHbpaq0eo3BNPn1CQQAACgcM3V6zEE0/pGBAIAAEQIwfFbbtP7RAQCAABECcG0uhaBAAAAUdRfPy4BAAAgTgR6HRQAACBOBO5EIAAAQKAItA4KAAAQJwL9EwgAABAoAq2DAgAABIpAD8MAAABEikDroAAAAHEi8NskEAAAQAQCAAAgAgEAAPi/PuouuwUAAIAAtsO5r/cmgQAAACXbDOdpOM1Dn58PAgwAJ0FE8MVDjUkAAAAASUVORK5CYII=");
     }
 
 }
@@ -6531,6 +7482,8 @@
 
     #HomeContainer {
         margin-top: 10px;
+        float: none;
+        width: unset;
     }
     
     #roseal-home-header {
