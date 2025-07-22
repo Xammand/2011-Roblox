@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           2011 Roblox
 @namespace      github.com/openstyles/stylus
-@version        1.5.2
+@version        1.5.3
 @description    A new userstyle
 @author         Xammand
 @preprocessor   stylus
@@ -1081,7 +1081,7 @@
         vertical-align: unset;
     }
     
-    .content .friends-carousel-container, .game-grid, .light-theme .section-content:not(.tab-content .section-content, .left-wrapper .section-content, .section-content .profile-about .section-content), #bodyColors .section-content, #profile-header-container, .btr-profile-bottom > div:has(iframe), .rbx-tab-content:not(#inventory-container .tab-content, .right-panel.six-column .tab-content, #asset-resale-data-container .rbx-tab-content, .group-details .rbx-tab-content, #settings-container .rbx-tab-content), #game-detail-page .btr-mid-container, .left-wrapper, .right-panel.six-column, #item-details-container .page-content, #asset-resale-data-container #resellers resellers-pane, .catalog-header .search-bars, .catalog-header .catalog-heading-container, #catalog-react-container .catalog-revamp .results-container .organic-items-wrapper, .search-container:not(#catalog-react-container .search-container), body:not(.btr-embed) #inventory-container .page-content, .group-details .group-store, #signup-container .rbx-login-form, #action-bar-container #action-bar, .login-base-container .section-content .login-form, .login-base-container .signup-option, .groups-list-sidebar .group-react-groups-list .groups-list-new .justify-between.items-baseline, .groups-list-sidebar .group-react-groups-list .groups-list-new .groups-list-items-container, #robux-upsell-react-page, #robux-upsell-react-page-wrapper .subscription-v1-container, #payment-method-container, .light-theme .premium-landing-page .membership-section, .games-page-container, #settings-container {
+    .content .friends-carousel-container, .game-grid, .light-theme .section-content:not(.tab-content .section-content, .left-wrapper .section-content, .section-content .profile-about .section-content), #bodyColors .section-content, #profile-header-container, .btr-profile-bottom > div:has(iframe), .rbx-tab-content:not(#inventory-container .tab-content, .right-panel.six-column .tab-content, #asset-resale-data-container .rbx-tab-content, .group-details .rbx-tab-content, #settings-container .rbx-tab-content), #game-detail-page .btr-mid-container, .left-wrapper, .right-panel.six-column, #item-details-container .page-content, #asset-resale-data-container #resellers resellers-pane, .catalog-header .search-bars, .catalog-header .catalog-heading-container, #catalog-react-container .catalog-revamp .results-container .organic-items-wrapper, .search-container:not(#catalog-react-container .search-container), body:not(.btr-embed) #inventory-container .page-content, .group-details .group-store, #signup-container .rbx-login-form, #action-bar-container #action-bar, .login-base-container .section-content .login-form, .login-base-container .signup-option, .groups-list-sidebar .group-react-groups-list .groups-list-new .justify-between.items-baseline, .groups-list-sidebar .group-react-groups-list .groups-list-new .groups-list-items-container, #robux-upsell-react-page, #robux-upsell-react-page-wrapper .subscription-v1-container, #payment-method-container, .light-theme .premium-landing-page .membership-section, .games-page-container, #settings-container, .home-page-games-list {
         margin: 0;
         height: unset;
         width: unset;
@@ -7504,6 +7504,17 @@
         min-height: unset;
         margin: 0px;
         width: 290px;
+        float: left;
+    }
+    
+    .place-list-container {
+        display: inline;
+    }
+    
+    .place-list-container:before {
+        content: "";
+        display: block;
+        clear: both;
     }
     
     #roseal-home-header .home-header {
@@ -7578,9 +7589,14 @@
         width: 266px;
     }
     
+    .game-home-page-container .friend-carousel-container .container-header h2 {
+        font-size: 0;
+    }
+    
     .game-home-page-container .friend-carousel-container .container-header h2:before {
-        content: "My ";
+        content: "My Friends";
         cursor: text;
+        font-size: 20px;
     }
     
     [data-rosealfe-homefriendsrows] .react-friends-carousel-container .friends-carousel-list-container, [data-rosealfe-homefriendsrows] .react-friends-carousel-container .friends-carousel-list-container-not-full {
@@ -7693,7 +7709,7 @@
     /* Games */
 
     .game-home-page-container > div:has(.friend-carousel-container) {
-        display: block !important;
+        display: inline !important;
     }
 
     div[data-testid="home-page-game-grid"] {
@@ -7835,6 +7851,124 @@
     .hover-game-tile.grid-tile .featured-game-container .featured-game-icon-container .game-card-image-pill .game-card-info .info-label.playing-counts-label:after {
         content: " players online";
     }
+    
+    /**/
+
+    .game-home-page-container {
+        display: inline;
+    }
+
+    .game-sort-carousel-wrapper {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .home-page-games-list {
+        width: 581px;
+    }
+    
+    .sdui-icon.icon-push-right-16x16  {
+        display: none;
+    }
+    
+    .game-sort-carousel-wrapper {
+        margin-top: -233px;
+    }
+    
+    .home-page-games-list.games-list .horizontally-scrollable {
+        height: unset;
+        white-space: unset;
+    }
+    
+    .game-tile-list {
+        display: block;
+        white-space: unset;
+    }
+    
+    .home-page-games-list .home-page-carousel .game-card {
+        display: inline-block;
+        padding: 0;
+        width: unset;
+        height: unset;
+    }
+    
+    .game-tile-list .game-tile .game-card-container {
+            padding: 6px;
+            margin: 0;
+            margin-left: 8px;
+            margin-bottom: 8px;
+            position: relative;
+            text-align: left;
+            width: unset;
+            height: unset;
+            border-radius: 0;
+        }
+        
+        .game-card .game-card-container .game-card-link {
+            display: block;
+            position: relative;
+            width: 160px;
+            height: 130px;
+        }
+        
+        .game-card .game-card-container .game-card-link:hover:before {
+            content: "";
+            position: absolute;
+            width: 148px;
+            padding: 138px 15px 15px;
+            top: -10px;
+            left: -10px;
+            border: solid 1px #888;
+            background: #fff;
+            font-size: 11px;
+            text-align: left;
+            color: #888;
+            border-radius: 5px;
+        }
+        
+        .light-theme .game-card-container .game-card-thumb-container, .game-card-thumb-container .game-card-thumb {
+            width: 160px;
+            height: 100px;
+            border-radius: 0;
+            background: none;
+        }
+        
+        .game-cards .game-card .game-card-name {
+            font-weight: bold;
+            font-size: 12px;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0;
+            line-height: normal;
+            max-height: none;
+        }
+        
+        .game-card .game-card-container .game-card-link .game-card-info {
+            margin: 0;
+            line-height: normal;
+            width: unset;
+            bottom: 0;
+        }
+        
+        .light-theme .game-card-info .info-label.icon-votes-gray, .game-tile .game-card-container .game-card-info .vote-percentage-label, .light-theme .game-card-info .info-label.icon-playing-counts-gray {
+            display: none;
+        }
+        
+        .game-tile .game-card-container .game-card-info .playing-counts-label {
+            color: Red;
+            float: left;
+            padding: 0;
+            line-height: normal;
+        }
+        
+        .game-tile .game-card-container .game-card-info .playing-counts-label:after {
+            content: " players online";
+            cursor: text;
+        }
+        
+        .game-sort-header-container .sort-subtitle-container {
+            display: none;
+        }
 }
 
 @-moz-document url-prefix("https://www.roblox.com/my/account") {
