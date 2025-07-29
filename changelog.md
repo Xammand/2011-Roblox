@@ -1,3 +1,9 @@
+### Version 1.6.1
+- Many bug fixes.
+- Many page edits.
+- Added early 2011 game details layout.
+- Made late 2011 game badges more accurate.
+- Many other things.
 ### Version 1.6.0
 - Added 2010 Themes.
 - Added Late 2011 Home Page (wip)
