@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           2011 Roblox
 @namespace      github.com/openstyles/stylus
-@version        1.6.1
+@version        1.6.2
 @description    A new userstyle
 @author         Xammand
 @preprocessor   stylus
@@ -1233,7 +1233,7 @@
         vertical-align: unset;
     }
     
-    .content .friends-carousel-container, .game-grid, .light-theme .section-content:not(.tab-content .section-content, .left-wrapper .section-content, .section-content .profile-about .section-content), #bodyColors .section-content, #profile-header-container, .btr-profile-bottom > div:has(iframe), .rbx-tab-content:not(#inventory-container .tab-content, .right-panel.six-column .tab-content, #asset-resale-data-container .rbx-tab-content, .group-details .rbx-tab-content, #settings-container .rbx-tab-content), .left-wrapper, .right-panel.six-column, #item-details-container .page-content, #asset-resale-data-container #resellers resellers-pane, .catalog-header .search-bars, .catalog-header .catalog-heading-container, #catalog-react-container .catalog-revamp .results-container .organic-items-wrapper, .search-container:not(#catalog-react-container .search-container), body:not(.btr-embed) #inventory-container .page-content, .group-details .group-store, #signup-container .rbx-login-form, #action-bar-container #action-bar, .login-base-container .section-content .login-form, .login-base-container .signup-option, .groups-list-sidebar .group-react-groups-list .groups-list-new .justify-between.items-baseline, .groups-list-sidebar .group-react-groups-list .groups-list-new .groups-list-items-container, #robux-upsell-react-page, #robux-upsell-react-page-wrapper .subscription-v1-container, #payment-method-container, .light-theme .premium-landing-page .membership-section, .games-page-container, #settings-container, .home-page-games-list, .group-affiliates {
+    .content .friends-carousel-container, .game-grid, .light-theme .section-content:not(.tab-content .section-content, .left-wrapper .section-content, .section-content .profile-about .section-content), #bodyColors .section-content, #profile-header-container, .btr-profile-bottom > div:has(iframe), .rbx-tab-content:not(#inventory-container .tab-content, .right-panel.six-column .tab-content, #asset-resale-data-container .rbx-tab-content, .group-details .rbx-tab-content, #settings-container .rbx-tab-content), .left-wrapper, .right-panel.six-column, #item-details-container .page-content, #asset-resale-data-container #resellers resellers-pane, .catalog-header .search-bars, .catalog-header .catalog-heading-container, #catalog-react-container .catalog-revamp .results-container .organic-items-wrapper, .search-container:not(#catalog-react-container .search-container), body:not(.btr-embed) #inventory-container .page-content, .group-details .group-store, #signup-container .rbx-login-form, #action-bar-container #action-bar, .login-base-container .section-content .login-form, .login-base-container .signup-option, .groups-list-sidebar .group-react-groups-list .groups-list-new .justify-between.items-baseline, .groups-list-sidebar .group-react-groups-list .groups-list-new .groups-list-items-container, #robux-upsell-react-page, #robux-upsell-react-page-wrapper .subscription-v1-container, #payment-method-container, .light-theme .premium-landing-page .membership-section, .games-page-container, #settings-container, .group-affiliates {
         margin: 0;
         height: unset;
         width: unset;
@@ -1258,7 +1258,7 @@
     }
     
     if layout == e {
-        .group-details-container > .section > .container-header, .group-profile-header, group-members-list:has(.group-members-list) .section, #group-shout, .group-details .group-wall, .groups-list, .profile-insights-container > span:nth-child(2), .group-games .hlist .list-item .game-card, #game-detail-page .btr-mid-container {
+        .group-details-container > .section > .container-header, .group-profile-header, group-members-list:has(.group-members-list) .section, #group-shout, .group-details .group-wall, .groups-list, .profile-insights-container > span:nth-child(2), .group-games .hlist .list-item .game-card, #game-detail-page .btr-mid-container, .home-page-games-list {
             margin: 0;
             height: unset;
             width: unset;
@@ -7847,6 +7847,10 @@
         display: none;
     }
     
+    .game-sort-carousel-wrapper:not(:has(a[aria-label="Continue"])), div[data-testid="home-page-game-grid"]:not(:has(div[aria-label="Continue"])) {
+        display: none !important;
+    }
+    
     /* Early */
 
     if layout == e {
@@ -8074,6 +8078,23 @@
     
     /* Games */
 
+    .game-sort-carousel-wrapper {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .home-page-games-list {
+        width: 581px;
+    }
+    
+    .sdui-icon.icon-push-right-16x16  {
+        display: none;
+    }
+    
+    .game-sort-carousel-wrapper {
+        margin-top: -233px;
+    }
+
     .game-home-page-container > div:has(.friend-carousel-container) {
         display: block !important;
     }
@@ -8098,7 +8119,7 @@
             margin-top: 5px;
         }
         
-        #roseal-home-header .home-header, .game-home-page-container .friend-carousel-container .react-friends-carousel-container, div[data-testid="home-page-game-grid"], #feed-container #statusForm, #feed-container .feeds {
+        #roseal-home-header .home-header, .game-home-page-container .friend-carousel-container .react-friends-carousel-container, div[data-testid="home-page-game-grid"], .game-sort-carousel-wrapper, #feed-container #statusForm, #feed-container .feeds {
             display: block;
             border: 1px solid #CDCDCD;
             background: #fff;
@@ -8336,10 +8357,12 @@
         }
         
         if home == 1 {
-            div[data-testid="home-page-game-grid"] {
+            div[data-testid="home-page-game-grid"], .game-sort-carousel-wrapper {
                 float: right;
                 width: 210px;
                 margin-top: -197px;
+                margin-left: 0;
+                margin-right: 0;
             }
             
             .css-ibw9t7-sectionHeader {
@@ -8348,7 +8371,7 @@
             }
             
             .css-1ia7jxc-textIconRowText[data-sdui-text="true"] {
-                color: inherit;
+                color: #363636;
                 font: inherit;
             }
             
@@ -8459,10 +8482,77 @@
             .hover-game-tile.grid-tile .featured-game-container .featured-game-icon-container .game-card-image-pill .game-card-info .info-label.playing-counts-label:after {
                 content: " players online";
             }
+            
+            .home-page-games-list.games-list .horizontally-scrollable{
+                height: unset;
+                transition: none;
+                float: none;
+            }
+            
+            .game-tile-list {
+                display: block;
+            }
+            
+            .game-tile-list .game-tile {
+                padding: 0;
+                display: block;
+                width: unset;
+                height: unset;
+                clear: both;
+            }
+            
+            .game-tile-list .game-tile .game-card-container {
+                float: none;
+                width: unset;
+                height: unset;
+                margin: 0;
+                border-radius: 0;
+                padding: 4px;
+            }
+            
+            .game-card .game-card-container .game-card-link {
+                display: block;
+                height: unset;
+            }
+            
+            .light-theme .game-card-container .game-card-thumb-container {
+                width: 50px;
+                height: 32px;
+                background: none;
+                margin-right: 4px;
+            }
+            
+            .builder-font .game-card-container .game-card-name {
+                display: inline;
+                line-height: inherit;
+                margin-top: 0;
+            }
+            
+            .game-card .game-card-container .game-card-link .game-card-info {
+                margin: 0;
+                bottom: 0;
+                width: unset;
+                line-height: inherit;
+            }
+            
+            .info-label.icon-votes-gray, .info-label.vote-percentage-label, .info-label.no-vote, .info-label.icon-playing-counts-gray {
+                display: none !important;
+            }
+            
+            .game-tile .game-card-container .game-card-info .playing-counts-label {
+                padding: 0;
+                font: inherit;
+                display: inline;
+                color: #000;
+            }
+            
+            .game-tile .game-card-container .game-card-info .playing-counts-label:after {
+                content: " players online";
+            }
         }
         
         if home == 0 {
-            div[data-testid="home-page-game-grid"] {
+            div[data-testid="home-page-game-grid"], .game-sort-carousel-wrapper {
                 float: left;
                 width: 663px;
                 margin-left: 5px;
@@ -8470,7 +8560,7 @@
             }
             
             .css-1ia7jxc-textIconRowText[data-sdui-text="true"] {
-                color: inherit;
+                color: #363636;
             }
             
             .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content {
@@ -8615,23 +8705,6 @@
     }
     
     /**/
-
-    .game-sort-carousel-wrapper {
-        padding: 0;
-        margin: 0;
-    }
-    
-    .home-page-games-list {
-        width: 581px;
-    }
-    
-    .sdui-icon.icon-push-right-16x16  {
-        display: none;
-    }
-    
-    .game-sort-carousel-wrapper {
-        margin-top: -233px;
-    }
     
     .home-page-games-list.games-list .horizontally-scrollable {
         height: unset;
