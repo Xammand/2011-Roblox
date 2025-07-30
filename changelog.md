@@ -1,3 +1,5 @@
+### Version 1.6.2
+- Home page bug fixes.
 ### Version 1.6.1
 - Many bug fixes.
 - Many page edits.
