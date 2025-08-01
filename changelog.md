@@ -1,3 +1,21 @@
+### Version 1.6.3
+(NOTE: Btroblox profile is not working right now. I will wait a while before doing anything to the profile. If btroblox is still not updated in a few days then I will assume it's no longer updated and will style the regular profile page.)  
+(PS: Make sure to reset your roseal sorts layout options, this is no longer supported.)
+- More home page bug fixes.
+- General bug fixes.
+- Page edits.
+- Styled tooltips.
+- Changed style option names to their offical name, which is just version number.
+- Changed "Recently Played" to "Recently Played Games" on early 2011 homepage.
+- Added space between subheader and main content in some pages.
+- Added fake facebook connect section in home page.
+- Added facebook subscribe button (follow button).
+- Added bug fixes and additions by 2013InternetLover.
+- Added option: Enable Facebook Features | Adds fake facebook share button in some places and possibly more eventually.
+- Added option: Dont Stretch Game Image
+- Added option: RSS Follow | Turns facebook subscribe button to rss version.
+- Added option: Semi-Classic Thumbnail Scroller
+- Removed code for wide games, roseal's way of implementing them is too buggy.
 ### Version 1.6.2
 - Home page bug fixes.
 ### Version 1.6.1
