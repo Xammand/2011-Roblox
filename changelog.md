@@ -11,10 +11,12 @@
 - Added fake facebook connect section in home page.
 - Added facebook subscribe button (follow button).
 - Added bug fixes and additions by 2013InternetLover.
+- Kinda styled announcements, will finish in next update.
 - Added option: Enable Facebook Features | Adds fake facebook share button in some places and possibly more eventually.
 - Added option: Dont Stretch Game Image
 - Added option: RSS Follow | Turns facebook subscribe button to rss version.
 - Added option: Semi-Classic Thumbnail Scroller
+- Added option: Notifications in home page | Move notifications in homepage like in 2011. (Only js for now)
 - Removed code for wide games, roseal's way of implementing them is too buggy.
 ### Version 1.6.2
 - Home page bug fixes.
