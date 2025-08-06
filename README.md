@@ -2,9 +2,9 @@
 This style tries to make Roblox look as 2011 as possible!
 
 This style is not finished! You may see some bugs and/or unstyled pages.  
-[Download](https://github.com/Xammand/2011-Roblox/edit/main/README.md#download) | 
-[Issues](https://github.com/Xammand/2011-Roblox/edit/main/README.md#issues) | 
-[Settings](https://github.com/Xammand/2011-Roblox/edit/main/README.md#settings) | 
+[Download](#download) | 
+[Issues](#issues) | 
+[Settings](#settings) | 
 [Changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md) | 
 [Userstyles.world](https://userstyles.world/style/3344/2011-roblox)
 
