@@ -1,20 +1,20 @@
 ### Version 1.7.0
 (NOTE: Btroblox has now updated but the only way to get this update right now is from github as the extension store version is not updated yet. https://github.com/AntiBoomz/BTRoblox)  
--Many bug fixes
--Changed 'Version' of style options to 'ROBLOX'
--Made "ROBLOX 2.0" style slightly better
--Added "ROBLOX 1.0" and "ROBLOX Classic" styles
--Added themes for "ROBLOX Classic": Sports, Default 2008, Builderman for President, Christmas 2008, Default 2007, Halloween 2007, Christmas 2007, Default 2006, and Alpha 2006
--Added "Comic Sans", "Hide Messages", and "No Background" options for "ROBLOX Classic" style
--RSS Feed icon now shows on every "style"
--Added fake sorts section for games page
--Made game search page more accurate
--Made game thumbnail scroller slightly better
--Added fake status in home page
--Fixed spacing issue with friends and avatar in home page
--Made game servers tab much more accurate
--Recommended games no longer show above tabs in early 2011 layout (too buggy), must use script for that now
--Probably many other things that I forgot about
+- Many bug fixes
+- Changed 'Version' of style options to 'ROBLOX'
+- Made "ROBLOX 2.0" style slightly better
+- Added "ROBLOX 1.0" and "ROBLOX Classic" styles
+- Added themes for "ROBLOX Classic": Sports, Default 2008, Builderman for President, Christmas 2008, Default 2007, Halloween 2007, Christmas 2007, Default 2006, and Alpha 2006
+- Added "Comic Sans", "Hide Messages", and "No Background" options for "ROBLOX Classic" style
+- RSS Feed icon now shows on every "style"
+- Added fake sorts section for games page
+- Made game search page more accurate
+- Made game thumbnail scroller slightly better
+- Added fake status in home page
+- Fixed spacing issue with friends and avatar in home page
+- Made game servers tab much more accurate
+- Recommended games no longer show above tabs in early 2011 layout (too buggy), must use script for that now
+- Probably many other things that I forgot about
 ### Version 1.6.3
 (NOTE: Btroblox profile is not working right now. I will wait a while before doing anything to the profile. If btroblox is still not updated in a few days then I will assume it's no longer updated and will style the regular profile page.)  
 (PS: Make sure to reset your roseal sorts layout options, this is no longer supported.)
