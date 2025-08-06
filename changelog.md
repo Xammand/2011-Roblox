@@ -1,5 +1,5 @@
 ### Version 1.7.0
-(NOTE: Btroblox has now updated but the only way to get this update right now is from github as the extension store version is not updated yet. https://github.com/AntiBoomz/BTRoblox)
+(NOTE: Btroblox has now updated but the only way to get this update right now is from github as the extension store version is not updated yet. https://github.com/AntiBoomz/BTRoblox)  
 -Many bug fixes
 -Changed 'Version' of style options to 'ROBLOX'
 -Made "ROBLOX 2.0" style slightly better
