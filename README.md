@@ -6,7 +6,8 @@ This style is not finished! You may see some bugs and/or unstyled pages.
 [Issues](#issues) | 
 [Settings](#settings) | 
 [Changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md) | 
-[Userstyles.world](https://userstyles.world/style/3344/2011-roblox)
+[Userstyles.world](https://userstyles.world/style/3344/2011-roblox) | 
+[ROBLOX 2011 Script](https://greasyfork.org/en/scripts/542803-roblox-2011)
 
 ### Credits
 - Xammand: Author of Style
@@ -19,17 +20,22 @@ Please submit any issues you have with this style [here](https://github.com/Xamm
 # Download
 1. Get Extensions:
    - Better Roblox ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/btroblox/)) ([Chrome](https://chromewebstore.google.com/detail/btroblox-making-roblox-be/hbkpclpemjeibhioopcebchdmohaieln))
-   - RoSeal ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/roseal/)) ([Chrome](https://chromewebstore.google.com/detail/roseal-augmented-roblox-e/hfjngafpndganmdggnapblamgbfjhnof))
    - Stylus ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)) ([Chrome](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne))
+   - (Optional) RoSeal ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/roseal/)) ([Chrome](https://chromewebstore.google.com/detail/roseal-augmented-roblox-e/hfjngafpndganmdggnapblamgbfjhnof))
    - (Optional) Tampermonkey ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)) ([Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo))
 3. Set Extension Settings:
    - [Better Roblox Settings](https://i.imgur.com/NXqYEMC.png)
-   - Roseal Settings: Open [this link](https://raw.githubusercontent.com/Xammand/2011-Roblox/refs/heads/main/roseal/roseal.json) and right click in the empty space and select 'Save Page As...' and download the file. Then, go to Roseal settings on Roblox, make sure you are on the 'Management' tab, click Browse in the 'Import Data' section, select the file you just downloaded, then press the 'Import Data' button. That's it! (thanks, DemaeMan)
+   - Roseal Settings: Open [this link](https://raw.githubusercontent.com/Xammand/2011-Roblox/refs/heads/main/roseal/roseal.json) ([this link](https://raw.githubusercontent.com/Xammand/2011-Roblox/refs/heads/main/roseal/roseal_script.json) if using script) and right click in the empty space and select 'Save Page As...' and download the file. Then, go to Roseal settings on Roblox, make sure you are on the 'Management' tab, click Browse in the 'Import Data' section, select the file you just downloaded, then press the 'Import Data' button. That's it! (thanks, DemaeMan)
 5. IMPORTANT NOTE: As of 1.6.3, the roseal sorts layout settings are no longer supported. Please make sure to reset the sorts layout settings to ensure no bugs. New users do not have to worry about this.
-6. Turn Roblox Theme to light mode if not already, otherwise issues will occur. (If you want a dark mode then you can use the OBC theme.)
-7. [Get This Style.](https://github.com/Xammand/2011-Roblox/raw/refs/heads/main/roblox2011.user.css)
+6. NOTE: As of 1.8.0, Roseal is no longer required. If you are just using the style you must get the extension for the header in the homepage. If you have the script, it now adds its own header so you no longer need to have Roseal. If you still want Roseal with the script, make sure to import the script version of the Roseal settings.
+7. Turn Roblox Theme to light mode if not already, otherwise issues will occur. (If you want a dark mode then you can use the OBC theme.)
+8. [Get This Style.](https://github.com/Xammand/2011-Roblox/raw/refs/heads/main/roblox2011.user.css)
 
 That is it unless I forgot something.
+# Scripts
+There is a script for this style that can be used if wanted. It is highly recommended to use as it makes Roblox look even more 2011! You can find it [here](https://greasyfork.org/en/scripts/542803-roblox-2011).
+## 2011 BC Page
+There is also a script that restores the 2011 Builders Club page. You can find it [here](https://greasyfork.org/en/scripts/542802-roblox-2011-bc-page).
 # Settings
 Note: Some settings are only for a selected style. Those will have the style name in parentheses. EX: (3.0), (Classic)  
 Others will be CSS or Javascript only. EX: (CSS), (JS)
@@ -80,11 +86,10 @@ Others will be CSS or Javascript only. EX: (CSS), (JS)
 - Show Header Twitter Link (JS): Roblox has a hidden Twitter link in the header, this option enables it.
 - Hide Avatar/Item Buttons: Hides "3D", "Show Items", etc. buttons as Roblox didnt have them back then.
 - Classic Report Link: Enables the classic report link used before 2011.
-- Don't Stretch Game Images: Game pictures or no longer widescreen (how they were back then) so they are stretched to be widescreen. This option makes the image not be stretched if you do not like that.
-- Enable Facebook Features: Roblox used to have many Facebook features on its site, this option will add fake share buttons and other related things when enabled.
-- **Home** Notifications in Home Page (JS): Moves the notifications into the home page, like in 2011.
-- **Home** Games on Right (Late 2011): Moves the games to the right side if using the late 2011 layout.
-- **Home** Show All Games on Right: Shows all games on the right side instead of just five. Games on right option must be enabled for this option to work.
+- Don't Stretch Game Images: Game pictures are no longer widescreen (how they were back then) so they are stretched to be widescreen. This option makes the image not be stretched if you do not like that.
+- Enable Facebook Features (3.0+): Roblox used to have many Facebook features on its site, this option will add fake share buttons and other related things when enabled. Roblox 2.0 and older did not have facebook features.
+- **Home** Show All Games (Late 2011): Shows all games on the right side instead of just five.
+- **Home** Hide Games (Early 2011): Hide games in early 2011 layout as they weren't there back then.
 - **Profile** More accurate About Header: Enables a more accurate profile header instead of the modern styled one.
 - **Profile** Hide Top Configure Button: Hides the configure button on the top of the profile page, as it wasnt there in 2011.
 - **Inventory** Ungroup Tabs: Shows every inventory tab as their own button instead of being grouped together.
@@ -95,11 +100,11 @@ Others will be CSS or Javascript only. EX: (CSS), (JS)
   - Only 2011 Tabs: Only shows tabs present in 2011. Removes any that aren't.
 - **Inventory** 2011 Tab Labels: Names every tab as they were named in 2011.
 - **Avatar** Hide Modern Item Tabs: Hides tabs for modern labels. (EX: Layered clothing, 3d faces, etc.)
-- **Game** Fake Avatar on Details: Adds a fake avatar next/above the game details, better than nothing.
+- **Game** Fake Avatar on Details (CSS): Adds a fake avatar next/above the game details. Only for CSS as the script now adds the creator's avatar.
 - **Game** Hide Modern Stats: Removes any stats that weren't present in 2011.
-- **Game** Facebook-styled Like & Dislikes: Styles the like and dislikes as Facebook buttons, this was how they were in 2011.
+- **Game** Facebook-styled Like & Dislikes: Styles the like and dislikes as Facebook buttons, like how they were in 2011.
 - **Game** Hide Dislikes (Facebook): Hides dislikes. Facebook does not have a dislike button. Facebook-styled like and dislikes option must be on.
-- **Game** RSS Follow: Styles the follow button like an RSS Follow link.
+- **Game** RSS Follow: Styles the follow button to like an RSS Follow link.
 - **Game** Semi-Classic Thumbnail Scroller: Enables an attempt at recreating the classic thumbnail scroller with pure css.
 - **Group** Hide Forums: Hide the modern forums that may show in some groups.
 - **Robux** Show Robux Header: Enables the classic Robux header used before 2011.
