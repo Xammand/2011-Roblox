@@ -1,3 +1,26 @@
+### Version 1.8.0
+(NOTE: Btroblox is now fixed and updated on chrome and firefox extension stores as of 8/15/25.)  
+- The usual, bug fixes and page edits.
+- Styled ROBLOX 2.0/1.0 page (slightly wip, some things might not look right and fake elements will still have 2011 look for now)
+- Styled ROBLOX 2.0 OBC Page
+- Made style compatible with new btroblox
+- Made style compatible with new script version ([see script changelog here.]([hi.com](https://greasyfork.org/en/scripts/542803-roblox-2011/versions)))
+- Facebook features are only shown on 3.0+ now as 2.0 and older didnt have facebook features
+- Made groups page slightly better
+- Made early 2011 home page friends more accurate
+- ROBLOX 2.0/1.0 header now shows correct rss feed icon
+- ROBLOX 4.0 header no longer shows rss feed icon
+- Fixed spacing issue with javascript version of 4.0 header
+- Fixed spacing issue between search bar and search dropdown for css header
+- Fixed search dropdown not appearing on css 4.0 header
+- Search dropdown is now styled on all css headers
+- Fixed css footer missing background on groups page
+- Added missing logged out css for small header and 4.0 header
+- Added missing css for small header game genre dropdown
+- Added option: Rename Robux to Tix
+- Added option: Hide Games (Home)
+- Removed option: Notifications in Home Page (The script now adds this by default.)
+- Removed option: Games on right (If using late 2011 layout, games will now be on the right by default.)
 ### Version 1.7.0
 (NOTE: Btroblox has now updated but the only way to get this update right now is from github as the extension store version is not updated yet. https://github.com/AntiBoomz/BTRoblox)  
 - Many bug fixes
