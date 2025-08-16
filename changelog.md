@@ -1,3 +1,5 @@
+### Version 1.8.1
+- Some bug fixes.
 ### Version 1.8.0
 (NOTE: Btroblox is now fixed and updated on chrome and firefox extension stores as of 8/15/25.)  
 - The usual, bug fixes and page edits.
