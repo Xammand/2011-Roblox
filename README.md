@@ -1,3 +1,5 @@
+# Important Note
+New update is in the works. Will be big update. Only been working on it for small bits of time due to motivation loss and being busy in real life. But it'll come out soon. This style had consumed my life for a long time and I hope for that to not happen again so after this big update is out there probably won't be many updates after. Probably just many small updates. So just know that this style is not dead yet, just has an update that is taking a long time to make.
 # Roblox 2011
 This style tries to make Roblox look as 2011 as possible!
 
