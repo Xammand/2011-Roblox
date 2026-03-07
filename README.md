@@ -1,5 +1,6 @@
 # V2
 ![alt text](https://i.imgur.com/LPiWVRS.png "V2")
+(V1 (current released version as of now) will be deprecated after V2 comes out, as V2 is a complete rewrite and stuff, so I will not respond to any V1 issues and will close them once V2 is out.)
 # Roblox 2011
 This style tries to make Roblox look as 2011 as possible!
 
