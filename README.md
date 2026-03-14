@@ -41,6 +41,8 @@ This script does not support the site chat as I cannot chat and do not plan on v
 2. [Get This Script.](https://github.com/Xammand/2011-Roblox/raw/refs/heads/main/roblox2011.user.js)
 3. To fully utilize the feed on the home page, make sure to turn on all group notifications.
 ## Settings
+Unlike V1, you can now set settings using a UI part of the script. You can find the settings by clicking the Tampermonkey icon, going to the ROBLOX 2011 script, and clicking "ROBLOX 2011 Settings." You can now also temporarily disable the script if you want by pressing "Disable ROBLOX 2011."  
+![alt text](https://i.imgur.com/3kIoCDW.png "Settings")
 - **General Style:** Sets the style you want to use. Each style is based on how the ROBLOX site looked like from 2006-2012.
    - **ROBLOX Classic:** Sets the style to what ROBLOX looked like in 2006-2009.
    - **ROBLOX 1.0:** Sets the style to what ROBLOX looked like in 2009.
