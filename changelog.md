@@ -1,3 +1,32 @@
+# Version 2
+### Version 2.0.0
+- Definently will forget some stuff here.
+- Complete rewrite.  
+  **Compared to V1:**
+- ROBLOX 2011 now has the ability to fully recreate the ROBLOX website with HTML and the ROBLOX api.
+- ROBLOX 2011 is now just one Tampermonkey Script.
+- ROBLOX 2011 no longer requires any ROBLOX extensions.
+- ROBLOX 2011 now requires the Tampermonkey extension, instead of it being optional.
+- ROBLOX 2011 now has an actual settings ui instead of having to manually set variables in the script.
+- Every page that is supported is now a complete HTML recreation using ROBLOX api for information, meaning that these pages are as accurate as they can be.
+- Much more accurate.
+- Added the ability to disable the script from a menu item.
+- New theme added: Test server.
+- New option, "Sub-style": contains "ROBLOX Classic with background", "ROBLOX 1.0 Classic", "Early ROBLOX 3.0", "ROBLOX 3.0 Small Header", "Early 2012 ROBLOX 4.0".
+- New option: Classic play buttons
+- You can now set a fake status if you want. You can either set the status in the settings or from the actual site itself. Only you can see this as it is simply just saved information from the script's settings.
+- Added support for group announcements for the feed on the home page. (The feed only supports group shouts and announcements right now.)
+- Added more "logged in" parts of the site.
+- The "ROBLOX 2011 BC Page" script is now part of the main script.
+- (BC Page) The manage account box now shows if you have BC/Premium or not. (Can't show what type you have right now.)
+- (BC Page) "Upgrade" buttons have been added to each BC button if the user is logged in.
+- More accurate 2005-Early 2006 header.
+- Tooltips for ROBLOX 3.0 and 4.0 now work.
+- The group page is slightly more accurate.
+- (Profile page) Added functionality to see your public profile page.
+- A bunch of other stuff I forgot to put here.
+- Less buggy.
+# Version 1
 ### Version 1.8.1
 - Some bug fixes.
 ### Version 1.8.0
