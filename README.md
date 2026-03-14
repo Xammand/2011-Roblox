@@ -35,7 +35,7 @@ This script does not support the site chat as I cannot chat and do not plan on v
 - Builders Club Page
 - ROBUX Page
 - Groups Page  
-  **Note:** Right now, some pages are more "finished" than others. You may notice some pages missing features such as actions like making a group primary or friending/unfriending someone.
+  **Note:** Right now, most, if not all, these pages are kinda unfinished. You may notice some pages missing features such as actions like making a group primary or friending/unfriending someone.
 ## Download
 1. Get Tampermonkey ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)) ([Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo))
 2. [Get This Script.](https://github.com/Xammand/2011-Roblox/raw/refs/heads/main/roblox2011.user.js)
