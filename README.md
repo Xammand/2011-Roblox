@@ -20,6 +20,8 @@ This script is not finished! You may see some bugs and/or unsupported pages.
 Please submit any issues you have with this script [here](https://github.com/Xammand/2011-Roblox/issues).
 # V2
 V2 is finally out! It is a complete rewrite that fully recreates the 2011 site as best it can with custom HTML and CSS. It doesn't depend on the modern site elements much like V1 did, which means the only real reason why a supported page could break is from a change in the ROBLOX api. As of V2.0.0, only a few pages are supported. This will obviously change in the future as more updates come out. You can see what pages are supported right now below. If there is a page you go on that is unsupported, you can disable the script in the Tampermonkey menu. Right now, this script is very unfinished and you will probably see some bugs. There are not very many settings options right now either. I have spent a lot of time making this script in a short amount of time and tried to release the first version as fast as possible so sorry if it seems rushed right now. It will obviously get better over time. It should be better than V1, atleast. Now go ahead and try it. For more information about V2, check the [changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md).
+
+This script does not support the site chat as I cannot chat and do not plan on verifying to enable it. I don't know what the chat looks like with this script so it may or may not look broken.
 ### Supported Pages (As of V2.0.0)
 - Home Page
 - Profile Page
