@@ -1,16 +1,13 @@
-# V2
-![alt text](https://i.imgur.com/LPiWVRS.png "V2")  
-(V1 (current released version as of now) will be deprecated after V2 comes out, as V2 is a complete rewrite and stuff, so I will not respond to any V1 issues and will close them once V2 is out.)
 # Roblox 2011
-This style tries to make Roblox look as 2011 as possible!
+This script tries to make Roblox look as 2011 as possible!
 
-This style is not finished! You may see some bugs and/or unstyled pages.  
+This script is not finished! You may see some bugs and/or unsupported pages.  
 [Download](#download) | 
 [Issues](#issues) | 
 [Settings](#settings) | 
 [Changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md) | 
-[Userstyles.world](https://userstyles.world/style/3344/2011-roblox) | 
-[ROBLOX 2011 Script](https://greasyfork.org/en/scripts/542803-roblox-2011)
+[Userstyles.world (V1)](https://userstyles.world/style/3344/2011-roblox) | 
+[ROBLOX 2011 Script (V1)](https://greasyfork.org/en/scripts/542803-roblox-2011)
 
 ### Credits
 - Xammand: Author of Style
@@ -18,9 +15,74 @@ This style is not finished! You may see some bugs and/or unstyled pages.
 - Wayback Machine: Reference for old roblox styling and images
 - YouTube: Old videos that show logged in pages/other related things
 - Roblox Wiki: Some old header banners
+- Robloxopolis' Webcache Archives: Archives of logged in pages from 2011-2012
 # Issues
-Please submit any issues you have with this style [here](https://github.com/Xammand/2011-Roblox/issues).
-# Download
+Please submit any issues you have with this script [here](https://github.com/Xammand/2011-Roblox/issues).
+# V2
+V2 is finally out! It is a complete rewrite that fully recreates the 2011 site as best it can with custom HTML and CSS. It doesn't depend on the modern site elements much like V1 did, which means the only real reason why a supported page could break is from a change in the ROBLOX api. As of V2.0.0, only a few pages are supported. This will obviously change in the future as more updates come out. You can see what pages are supported right now below. If there is a page you go on that is unsupported, you can disable the script in the Tampermonkey menu. Right now, this script is very unfinished and you will probably see some bugs. There are not very many settings options right now either. I have spent a lot of time making this script in a short amount of time and tried to release the first version as fast as possible so sorry if it seems rushed right now. It will obviously get better over time. It should be better than V1, atleast. Now go ahead and try it. For more information about V2, check the [changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md).
+### Supported Pages (As of V2.0.0)
+- Home Page
+- Profile Page
+- Profile Friends Page
+- Games Page
+- Game Details Page
+- Games Search Page (Part of Catalog)
+- Catalog
+- Asset Details Page
+- User and Group Search Page
+- Builders Club Page
+- ROBUX Page
+- Groups Page  
+  **Note:** Right now, some pages are more "finished" than others. You may notice some pages missing features such as actions like making a group primary or friending/unfriending someone.
+## Download
+1. Get Tampermonkey ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)) ([Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo))
+2. [Get This Script.](https://github.com/Xammand/2011-Roblox/raw/refs/heads/main/roblox2011.user.js)
+3. To fully utilize the feed on the home page, make sure to turn on all group notifications.
+## Settings
+- **General Style:** Sets the style you want to use. Each style is based on how the ROBLOX site looked like from 2006-2012.
+   - **ROBLOX Classic:** Sets the style to what ROBLOX looked like in 2006-2009.
+   - **ROBLOX 1.0:** Sets the style to what ROBLOX looked like in 2009.
+   - **ROBLOX 2.0:** Sets the style to what ROBLOX looked like in 2010.
+   - **ROBLOX 3.0:** Sets the style to what ROBLOX looked like in 2010-2012.
+   - **ROBLOX 4.0:** Sets the style to what ROBLOX looked like in 2012.
+- **Sub-Style:** Sets an additional style for a style from a closer period of time.
+   - **Default:** Nothing is added.
+   - **ROBLOX Classic BKG**: Adds the 1.0-2.0 background to the classic style, this sub-style would've been used towards the end of the ROBLOX Classic style in 2009.
+   - **ROBLOX 1.0 Classic:** Sets the ROBLOX 1.0 style to an earlier version that used the ROBLOX Classic header and slight css changes.
+   - **Early ROBLOX 3.0:** Sets the ROBLOX 3.0 style to an earlier version from 2010 that used a layout closer to the 1.0 and 2.0 layout.
+   - **ROBLOX 3.0 Small Header:** Adds the small version of the header to the ROBLOX 3.0 style.
+   - **Early 2012 ROBLOX 4.0:** Sets the ROBLOX 4.0 style to an earlier version from early 2012 that used a "brighter" header.
+- **Theme:** Sets a theme for the selected style, not all listed themes can be used for all styles.
+   - **OBC:** (1.0+) Adds the OBC theme that was used for the supported styles.
+   - **Parent Edition:** (2.0+) Adds the Parent Edition banner that was used when you logged into a parent account back then.
+   - **Test Server:** (Classic+) Adds the Test Server background that was used for the supported styles which was used for ROBLOX test sites back then.
+   - **Christmas 2011:** (3.0) Adds the Christmas banner, background, and logo that was used in 2011.
+   - **Thanksgiving 2011:** (3.0) Adds the Thanksgiving banner, background, and logo that was used in 2011.
+   - **Halloween 2011:** (3.0) Adds the Halloween banner, background, and logo that was used in 2011.
+   - **Christmas 2010:** (3.0) Adds the Christmas banner, background, and logo that was used in 2010.
+   - **Thanksgiving 2010:** (3.0) Adds the Thanksgiving banner, background, and logo that was used in 2010.
+   - **Halloween 2010:** (3.0) Adds the Halloween banner, background, and logo that was used in 2010.
+   - **Early 2009 Banner:** (Classic) Adds the banner that was used in early 2009.
+   - **Christmas 2008 Banner:** (Classic) Adds the christmas banner that was used in 2008.
+   - **Default 2008 Banner:** (Classic) Adds the default banner that was used in 2008.
+   - **"Builderman for President" Banner:** (Classic) Adds the banner from Early 2008 that was made to celebrate the 2008 U.S. election.
+   - **Christmas 2007 Banner:** (Classic) Adds the Christmas banner used in 2007.
+   - **Halloween 2007 Banner:** (Classic) Adds the Halloween banner used in 2007.
+   - **Default 2006-2007 Banner:** (Classic) Adds the default banner used in 2006-2007.
+   - **2005-Early 2006:** (Classic) Adds the default header used in 2005-Early 2006.
+   - **2005-Early 2006 Alpha:** (Classic) Adds the default header used in 2005-Early 2006 with "Alpha test" text on the banner.
+- **General Layout**: Sets the layout. (Modern layout is not supported yet as of V2.0.0)
+   - **Classic:** (Classic-3.0) Sets the layout to be the classic layout used before late 2011.
+   - **Modern** (3.0+) Sets the layout to be the more modern looking layout used from late 2011 to 2013.
+- **Builders Club Logo**: Lets you pick what BC logo to use since ROBLOX doesn't display tiers anymore.
+- **Fake Status:** A text box that lets you add a fake status to your home and profile page. Only you can see this. You can also add a fake status on the site itself.
+- **Enable Header Twitter Button:** (1.0-Early 4.0) Enables the hidden Twitter button in the header next to the news link.
+- **Classic Play Buttons:** (Classic+) Enables the classic play buttons used from before 2009.
+- **Show Display Names on Profiles:** Shows the user's display name on their profile.
+- **Show More Stats:** More information that wasn't displayed in 2011 is displayed in the stats on the profile page.
+# V1 (Deprecated)
+V1 will no longer recieve updates but I will keep the download information and everything for it here until V2 is more "finished".
+## Download
 1. Get Extensions:
    - Better Roblox ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/btroblox/)) ([Chrome](https://chromewebstore.google.com/detail/btroblox-making-roblox-be/hbkpclpemjeibhioopcebchdmohaieln))
    - Stylus ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)) ([Chrome](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne))
@@ -35,11 +97,11 @@ Please submit any issues you have with this style [here](https://github.com/Xamm
 8. [Get This Style.](https://github.com/Xammand/2011-Roblox/raw/refs/heads/main/roblox2011.user.css)
 
 That is it unless I forgot something.
-# Scripts
+## Scripts
 There is a script for this style that can be used if wanted. It is highly recommended to use as it makes Roblox look even more 2011! You can find it [here](https://greasyfork.org/en/scripts/542803-roblox-2011).
-## 2011 BC Page
+### 2011 BC Page
 There is also a script that restores the 2011 Builders Club page. You can find it [here](https://greasyfork.org/en/scripts/542802-roblox-2011-bc-page).
-# Settings
+## Settings
 Note: Some settings are only for a selected style. Those will have the style name in parentheses. EX: (3.0), (Classic)  
 Others will be CSS or Javascript only. EX: (CSS), (JS)
 - Header
