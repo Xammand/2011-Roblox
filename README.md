@@ -40,6 +40,7 @@ This script does not support the site chat as I cannot chat and do not plan on v
 1. Get Tampermonkey ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)) ([Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo))
 2. [Get This Script.](https://github.com/Xammand/2011-Roblox/raw/refs/heads/main/roblox2011.user.js)
 3. To fully utilize the feed on the home page, make sure to turn on all group notifications.
+4. **For Google Chrome/Chromium Browsers:** You must enable developer mode in "chrome://extensions/" and enable "Allow user scripts" in Tampermonkey by right clicking on the icon and clicking "Manage extension." Otherwise, the script won't load at all.
 ## Settings
 Unlike V1, you can now set settings using a UI part of the script. You can find the settings by clicking the Tampermonkey icon, going to the ROBLOX 2011 script, and clicking "ROBLOX 2011 Settings." You can now also temporarily disable the script if you want by pressing "Disable ROBLOX 2011."  
 ![alt text](https://i.imgur.com/3kIoCDW.png "Settings")
