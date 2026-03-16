@@ -1,4 +1,36 @@
 # Version 2
+### Version 2.0.1
+- Minor bug fixes.
+- Added support for "My Stuff/Inventory" page.
+- Added modern and classic game launcher. (Changes based on what style you use.)
+- Added the ability to favorite and unfavorite games and items. (To unfavorite games and items, go to your favorites in your profile and then press the delete button on a game or item. It can take a second for the favorite list to update so don't worry if the page reloads and the game/item is still there, it will update eventually.)
+- Fixed the BC icon not loading the image in some places.
+- (Game Details Page) If the creator is a group, their icon will now correctly display.
+- (Game Details Page) Fixed(?) the updated time ago text displaying negative seconds if the game was updated very recently.
+- (Game Details Page) Added missing genre icons.
+- (Game Details Page) Fixed badges displaying "null" in the description if they have a blank description.
+- (Inventory) Removed trash pager code for Stuff/Inventory and replaced with superior pager function code.
+- (Inventory) Slightly changed inventory api to now display the selected user's serial number on Limited Unique items.
+- (Inventory) Fixed duplicate items not appearing.
+- (Inventory) Added support for decals, models, and places.
+- (Inventory) Added recommendations for the ROBLOX Classic version.
+- (User Friends Page) Removed trash pager code and replaced with superior pager function code.
+- (User Friends Page) Added no friends message that appears if selected user has no friends.
+- (User Friends Page) Condensed some HTML code.
+- (Items Page) Added some missing item type names.
+- (Items Page) Added support for the classic styles. (Classic, 1.0, and 2.0.)
+- (Items Page) Added favorite button.
+- (Items Page) Added the original price of a Limited Unique item to the details area.
+- (Items Page) Fixed a bug where free items would display the buy button instead of take button.
+- (Items Page) Removed genre/tags api function because apparently that api doesn't exist anymore.
+- (Items Page) Added a generic "All Genres" icon to the genre box instead of it being empty.
+- (Items Page) Added a remove button for items that you own. (Doesn't actually work.)
+- (Items Page) Added working pager in Resellers box for Limited/Limited Unique items.
+- (Items Page) Made a reseller's serial number more accurate by adding the total quanity of a limited/limited unique item.
+- (Profile Page) Fixed Join Date in stats box not appearing if it's enabled.
+- (Profile Page) Added pagination and working category switcher to favorites.
+- (Profile Page) Added remove favorite button to favorited items if the user is on their own profile.
+- (ROBLOX 4.0) Fixed missing report abuse icon.
 ### Version 2.0.0
 - Definently will forget some stuff here.
 - Complete rewrite.  
