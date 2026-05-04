@@ -1,4 +1,18 @@
 # Version 2
+### Version 2.0.2
+This is basically an update I made a while ago but never uploaded until now. The reason why it took so long was because I was trying to figure out a way to get buying/getting catalog items working but it seems thats not really possible with this script so it probably will never support that unless I find some weird way to get it to work. Kinda rushed this one out. Sorry if you were expecting more after this long time. Next update I'm planning on finally adding support for modern layout.
+- Added Inbox and PrivateMessages Pages, actions don't work for now.
+- Added support for login page (Unfinished)
+- Fixed the login links for some headers where it would take you to a page that doesn't exist.
+- (Profile Page) Actually fixed Join Date in stats box not appearing if it's enabled this time.
+- (User and Group Search Pages) Removed trash pager code and replaced with superior pager function code.
+- (User Search Page) Fixed the BC icon not loading.
+- (Groups Page) Removed the "All Members" role that appeared as "Members" and was very buggy.
+- (Items Page) Added support for group creators.
+- (Items Page) Fixed a rare bug that could happen where the creator's id would be completely wrong. (Mostly occured in groups?)
+- (Items Page) Added functional modals for buying/getting an item. Actually buying/getting an item doesn't work right now and may or may not be something that will ever be made functional.
+- (BC Page) Added support for the new Roblox Plus page.
+- (Home Page) Fixed bug where if user has BC/Premium the icon wouldn't appear on their avatar.
 ### Version 2.0.1
 - Minor bug fixes.
 - Added support for "My Stuff/Inventory" page.
