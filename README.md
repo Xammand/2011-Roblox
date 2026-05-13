@@ -22,8 +22,9 @@ Please submit any issues you have with this script [here](https://github.com/Xam
 V2 is finally out! It is a complete rewrite that fully recreates the 2011 site as best it can with custom HTML and CSS. It doesn't depend on the modern site elements much like V1 did, which means the only real reason why a supported page could break is from a change in the ROBLOX api. As of V2.0.0, only a few pages are supported. This will obviously change in the future as more updates come out. You can see what pages are supported right now below. If there is a page you go on that is unsupported, you can disable the script in the Tampermonkey menu. Right now, this script is very unfinished and you will probably see some bugs. There are not very many settings options right now either. I have spent a lot of time making this script in a short amount of time and tried to release the first version as fast as possible so sorry if it seems rushed right now. It will obviously get better over time. It should be better than V1, atleast. Now go ahead and try it. For more information about V2, check the [changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md).
 
 This script does not support the site chat as I cannot chat and do not plan on verifying to enable it. I don't know what the chat looks like with this script so it may or may not look broken.
-### Supported Pages (As of V2.0.1)
+### Supported Pages (As of V2.1.0)
 - Home Page
+- Inbox Page
 - Profile Page
 - Profile Friends Page
 - Games Page
@@ -48,10 +49,10 @@ Unlike V1, you can now set settings using a UI part of the script. You can find 
 ![alt text](https://i.imgur.com/3kIoCDW.png "Settings")
 - **General Style:** Sets the style you want to use. Each style is based on how the ROBLOX site looked like from 2006-2012.
    - **ROBLOX Classic:** Sets the style to what ROBLOX looked like in 2006-2009.
-   - **ROBLOX 1.0:** Sets the style to what ROBLOX looked like in 2009.
-   - **ROBLOX 2.0:** Sets the style to what ROBLOX looked like in 2010.
-   - **ROBLOX 3.0:** Sets the style to what ROBLOX looked like in 2010-2012.
-   - **ROBLOX 4.0:** Sets the style to what ROBLOX looked like in 2012.
+   - **ROBLOX 1.0:** Sets the style to what the ROBLOX website looked like in 2009.
+   - **ROBLOX 2.0:** Sets the style to what the ROBLOX website looked like in 2010.
+   - **ROBLOX 3.0:** Sets the style to what the ROBLOX website looked like in 2010-2011.
+   - **ROBLOX 4.0:** Sets the style to what the ROBLOX website looked like in 2012.
 - **Sub-Style:** Sets an additional style for a style from a closer period of time.
    - **Default:** Nothing is added.
    - **ROBLOX Classic BKG**: Adds the 1.0-2.0 background to the classic style, this sub-style would've been used towards the end of the ROBLOX Classic style in 2009.
@@ -78,9 +79,9 @@ Unlike V1, you can now set settings using a UI part of the script. You can find 
    - **Default 2006-2007 Banner:** (Classic) Adds the default banner used in 2006-2007.
    - **2005-Early 2006:** (Classic) Adds the default header used in 2005-Early 2006.
    - **2005-Early 2006 Alpha:** (Classic) Adds the default header used in 2005-Early 2006 with "Alpha test" text on the banner.
-- **General Layout**: Sets the layout. (Modern layout is not supported yet as of V2.0.0)
-   - **Classic:** (Classic-3.0) Sets the layout to be the classic layout used before late 2011.
-   - **Modern** (3.0+) Sets the layout to be the more modern looking layout used from late 2011 to 2013.
+- **ROBLOX 3.0 Layout**: Sets the layout for the ROBLOX 3.0 layout as this style saw two different layouts.
+   - **Classic:** Sets the layout to the classic layout used before late 2011.
+   - **Modern:** Sets the layout to the more modern looking layout used from late 2011 to 2013.
 - **Builders Club Logo**: Lets you pick what BC logo to use since ROBLOX doesn't display tiers anymore.
 - **Fake Status:** A text box that lets you add a fake status to your home and profile page. Only you can see this. You can also add a fake status on the site itself.
 - **Enable Header Twitter Button:** (1.0-Early 4.0) Enables the hidden Twitter button in the header next to the news link.
