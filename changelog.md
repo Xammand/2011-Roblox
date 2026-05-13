@@ -1,4 +1,16 @@
 # Version 2
+### Version 2.1.0
+- Added support for the "modern" layout for home, game details, and group pages.
+- Changed code that detects what page you're on by now making it target a more exact url.
+- Renamed "General Layout" setting to "ROBLOX 3.0 Layout".
+- (Catalog Page) Fixed page not reloading when an item is clicked.
+- (Catalog Page) Fixed bundles going to the regular /catalog/ url instead of /bundles/.
+- (Items + Game Details Page) Fixed bug for updated text where it would display hours instead of days even if it was updated more than 24 hours ago.
+- (Items + Game Details Page) Made updated time ago text slightly more accurate to how long ago the date was by getting a more exact time it was last updated.
+- (Game Details Page) Fixed bug that gave "undefined" text for creation date.
+- (Game Details Page) Added support for group links for recommended games.
+- (Game Details Page) Fixed basically every game displaying "genre enforced gear" in the gear section even if the game has gear disabled.
+- (Groups Page) Added support for group announcements since it seems classic shouts were removed from the api.
 ### Version 2.0.2
 This is basically an update I made a while ago but never uploaded until now. The reason why it took so long was because I was trying to figure out a way to get buying/getting catalog items working but it seems thats not really possible with this script so it probably will never support that unless I find some weird way to get it to work. Kinda rushed this one out. Sorry if you were expecting more after this long time. Next update I'm planning on finally adding support for modern layout.
 - Added Inbox and PrivateMessages Pages, actions don't work for now.
