@@ -51,7 +51,7 @@ Unlike V1, you can now set settings using a UI part of the script. You can find 
    - **ROBLOX Classic:** Sets the style to what ROBLOX looked like in 2006-2009.
    - **ROBLOX 1.0:** Sets the style to what the ROBLOX website looked like in 2009.
    - **ROBLOX 2.0:** Sets the style to what the ROBLOX website looked like in 2010.
-   - **ROBLOX 3.0:** Sets the style to what the ROBLOX website looked like in 2010-2011.
+   - **ROBLOX 3.0:** Sets the style to what the ROBLOX website looked like in 2011.
    - **ROBLOX 4.0:** Sets the style to what the ROBLOX website looked like in 2012.
 - **Sub-Style:** Sets an additional style for a style from a closer period of time.
    - **Default:** Nothing is added.
