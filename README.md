@@ -3,9 +3,8 @@
 [Issues](#issues) | 
 [Settings](#settings) | 
 [Changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md) | 
-[Userstyles.world (V1)](https://userstyles.world/style/3344/2011-roblox) | 
-[ROBLOX 2011 Script (V1)](https://greasyfork.org/en/scripts/542803-roblox-2011)  
-This script tries to make Roblox look as 2011 as possible!  
+[Userstyles.world (V1)](https://userstyles.world/style/3344/2011-roblox)  
+This script tries to make the Roblox website look as 2011 as possible!  
 This script is not finished! You may see some bugs and/or unsupported pages.  
 This script is english only. There is no way to change the language right now.
 
