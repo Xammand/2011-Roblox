@@ -1,5 +1,8 @@
 # Version 2
 ### Version 2.1.1
+- Major code clean up (put most of the api functions into one function).
+- Removed some pile of trash code that is litteraly just a pile of trash.
+- Added support for "modern" layout for Inbox/Messages and PrivateMessages pages.
 - Tweaked pager code to make it better when loading page.
 - Some pagers now display a spinner when loading.
 - "Added" Messages page. (It's essentially the Inbox page in modern 3.0/4.0 style as the /Inbox.aspx page was moved to /Messages.aspx when the modern style started being used.)
