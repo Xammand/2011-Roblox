@@ -1,4 +1,20 @@
 # Version 2
+### Version 2.1.1
+- Tweaked pager code to make it better when loading page.
+- Some pagers now display a spinner when loading.
+- "Added" Messages page. (It's essentially the Inbox page in modern 3.0/4.0 style as the /Inbox.aspx page was moved to /Messages.aspx when the modern style started being used.)
+- (ROBLOX Classic) Removed the kinda useless and very annoying unfinished notice text above the header. (I also removed the notice for the 4.0 style as well in an earlier update but forgot to include it in the changelog.)
+- (Home Page) System notifications will now display the correct number on the modern layout instead of always being 0.
+- (Home Page) The feed will now load a little faster.
+- (Home Page) In the modern layout, the name of the author of a group shout is now displayed instead of nothing.
+- (Home Page) Removed classic group shouts code for the feed since it seems they were removed from the api.
+- (Games Page) Fixed bug where the pages would load and reload pages for infinity even after the last page was reached.
+- (Games Page) Added 2 categories for modern games page ("My Favorites" and "Recently Played") that are shown if you are logged in. (Classic games page didn't have these.)
+- (Games Page) Added support for "My Favorites" category page for modern games page (Classic games page didn't have this).
+- (Games Page) Added support for "Recently Played" category page for modern games page (Classic games page didn't have this).
+- (Group Page) Fixed searchbar on modern layout not working.
+- (PrivateMessages Page) Fixed bug where any "system account" that wasn't Roblox (builderman) was named Roblox as the author. (builderman is considered a system account in the api now but was still considered a regular account back then.)
+- (PrivateMessages Page) Fixed missing title attribute for author username.
 ### Version 2.1.0
 - Added support for the "modern" layout for home, game details, and group pages.
 - Changed code that detects what page you're on by now making it target a more exact url.
