@@ -1,4 +1,16 @@
 # Version 2
+### Version 2.1.2
+- Added setting "Primary Currency". You can choose if you want ROBUX or Tickets as your primary currency. If you choose tickets, your robux amount will be displayed as your Tickets amount in the header and every item will cost Tickets instead of ROBUX.
+- Added support for the Default page.
+- Added support for the Badges page.
+- (ROBLOX Classic) Fixed style not working.
+- (Inventory) Fixed classic heads not displaying at all.
+- (Inventory) Fixed classic faces not displaying thumbnail.
+- (Login Page) Finished the lazily put together login page.
+- (Catalog Page) The Collectibles category now properly displays Limited and Limited Unique items.
+- (Items Page) Cleaned up some of the disasterous code of the Items Page.
+- (Items Page) Recommended item creator link for groups now have the group url instead of user url.
+- (Game Details Page) Fixed recommended games not showing for any game.
 ### Version 2.1.1
 - Major code clean up (put most of the api functions into one function).
 - Removed some pile of trash code that is litteraly just a pile of trash.
