@@ -1,4 +1,21 @@
 # Version 2
+### Version 2.2.0
+- More code cleanup.
+- Unsupported pages will now disable the script on that page instead of showing a big unstyled mess of HTML.
+- Added support for Badges Info page.
+- Added support for Avatar Editor page. (Actions don't work for now.)
+- (Modern ROBLOX 3.0 and 4.0) Fixed play button not being centered and edit button being on the left of the play button instead of the right.
+- (Login Page) Added support to "NewLogin" page. (Same page as regular login page, just diffferent url.)
+- (BC Page) Fixed inaccurate gift card image for Modern ROBLOX 3.0 style.
+- (ROBUX Page) Finally finished this page.
+- (Profile Page) Fixed follow button not appearing for Modern ROBLOX 3.0 and 4.0 styles.
+- (Game Details Page) Fixed uncopylocked icon not showing on modern layout.
+- (Game Details Page) Fixed edit button not appearing on uncopylocked games for classic layout + Added edit button for uncopylocked games/games made by you for modern layout.
+- (Game Details Page) On modern layout, fixed see more button for description appearing for descriptions that didn't need one.
+- (Game Details Page) On modern layout, fixed descriptions that didn't need see more button not appearing.
+- (Game Details Page) Added "scroller" thumbnails for games with more than one thumbnail on modern layout. Videos are also supported.
+- (Items Page) The favorite button for classic styles (ROBLOX 2.0 and before) now functions correctly.
+- (Items Page) Added "modern" favorite button for Modern ROBLOX 3.0 and 4.0.
 ### Version 2.1.2
 - Added setting "Primary Currency". You can choose if you want ROBUX or Tickets as your primary currency. If you choose tickets, your robux amount will be displayed as your Tickets amount in the header and every item will cost Tickets instead of ROBUX.
 - Added support for the Default page.
