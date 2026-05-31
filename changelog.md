@@ -1,4 +1,32 @@
 # Version 2
+### Version 2.2.1
+- More code cleanup.
+- Added "modern" recommended box for modern layout.
+- The recommended box now supports bundles.
+- Fixed thumbnails for more than 100 items not loading. This mostly occured in groups on profile page. If user was in more than 100 groups, then none of the thumbnails in the groups they were in would load.
+- (Modern ROBLOX 3.0 OBC Theme) Added missing styling. (Fixed appearance issues on game details page.)
+- (ROBLOX 1.0 Classic) Made theme slightly more accurate. (Changed colors for headers and boxes.)
+- (Roblox 1.0 Classic) Fixed Tickets in header using Robux color.
+- (Profile Page) If a user's description has line breaks in it, they are now correctly displayed. (Classic Style Layout doesn't as it didn't support that.)
+- (Profile Page) Fixed player badges pager and probably other things using that same pager not going to another page after the first page change.
+- (Profile Page) Place visits in stats now actually display the correct number instead of just 0. (May take a while to load the total number, depending on how many active games the user has.)
+- (Profile Page) Fixed "no friends" message not appearing if user doesn't have any friends.
+- (Profile Page) Added friend requests box above inventory. (Only appears if you have pending friend requests.)
+- (User Friends Page) Fixed friends not appearing.
+- (Character/Avatar Editor Page) Actions have been added. You can now equip/unequip items and change your avatar's body color.
+- (Character/Avatar Editor Page) The BC icon now appears under your avatar if you have Premium.
+- (Items Page - Badges) Fixed creator not displaying for badges that are for inactive games.
+- (Items Page) Fixed recommended items not appearing for bundles.
+- (Groups Page) The group selected in the group list on the left is now the first group to display in the list for modern layout.
+- (Groups Page) Added games tab for modern layout.
+- (Groups Page) You can now join/leave groups on modern layout + leave group button now gives confirm box.
+- (Groups Page) Fixed text overflow for groups user is in for modern layout.
+- (Groups Page) The number of members in a role are now displayed in modern layout.
+- (Groups Page) On modern layout, if you have a join request pending for a group the join request pending button will now display.
+- (Groups Page) On modern layout, fixed the pager not appearing for roles with more than 8 members after switching from a role with 8 or less.
+- (Groups Page) On modern layout, more of the username for a member is now displayed.
+- (Groups Page) On modern layout, a loading icon will now appear when you switch roles.
+- (Groups Page) Fixed a semi-rare case where the membercount for a role is displayed as 0 even though there are members in that role resulting in those members not being displayed (Usually only *sometimes* occured in groups with barely any members? Roblox API is wack....).
 ### Version 2.2.0
 - More code cleanup.
 - Unsupported pages will now disable the script on that page instead of showing a big unstyled mess of HTML.
