@@ -1,3 +1,4 @@
+**NOTICE: I will be going on vacation soon so I will be taking a break from updating this script for a while. I will probably be back in about 1-2 weeks.**
 # Roblox 2011
 [Download](#download) | 
 [Issues](#issues) | 
