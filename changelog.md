@@ -1,4 +1,43 @@
 # Version 2
+### Version 2.2.2
+- More code cleanup.
+- Added Style: ROBLOX 3.0 Modern.
+- Added Style: ROBLOX 3.0 Classic.
+- Removed Setting: ROBLOX 3.0 Layout.
+- Added Setting: Rename All Accessories to Hats.
+- Added Setting: Rename Dynamic Heads to Faces/Heads.
+- Error pages now have either no header or a "limited" header, just like how it was back then.
+- The input for the modern groups pager now works.
+- Even if there is only 1 page, a pager will now still appear as that's how Roblox's did back then.
+- Item names displayed in plural will now be correctly displayed. (Ex: Pants will now be "Pants" instead of "Pantss")
+- The ROBLOX 1.0 style now has an OBC theme, which is just the ROBLOX 2.0 OBC theme because they were both the exact same.
+- (ROBLOX 1.0/2.0 OBC Theme) Fixed some styling issues.
+- Added support for the regular and Robux maintenance pages.
+- Added support for the "Send Friend Invitation Page". (Not to be confused with the "Friend Invitation Page")
+- (Profile Page) Users that have Roblox Plus will now have a BC icon below their avatar.
+- (Profile Page) Fixed add friend button not appearing if user has no description.
+- (Profile Page) Finally added missing report button under user avatar for ROBLOX 1.0+ layout.
+- (Profile Page) Added send message button that will likely never actually work.
+- (Profile Page) Added add friend button for classic layout.
+- (Profile Page) Fixed avatar image being a little blury for classic layout.
+- (Avatar Editor Page) Made page more accurate.
+- (Avatar Editor Page) Fixed some huge innacuracies with the color chooser "mannequin". (Most of that was just a port of BTRoblox's version of it and the Roblox 2011 V1 styling. It is now Roblox's version from back then.)
+- (Avatar Editor Page) Added working popups for color chooser.
+- (Avatar Editor Page) If you don't own any items for a certain category in wardrobe, a no results message will now display instead of nothing happening.
+- (Avatar Editor Page) The wear and remove buttons now actually look like buttons and are now in the correct place for the item.
+- (Avatar Editor Page) For the currently wearing items, the item type name is now displayed better.
+- (Avatar Editor Page) Added working packages.
+- (Avatar Editor Page) The shop and create buttons now function.
+- (Catalog Page) Off sale items will now be displayed as they were always displayed back then.
+- (Catalog Page) Added text for the "Updated" detail for items. (It's just the date the item was created but it's still something.)
+- (Catalog Page) Added a "No Results" message for categories that don't have any items to display.
+- (Catalog Page) The "Free Items" category will now actually display free items.
+- (Catalog Page) Fixed some categories sorting items by favorite count when the sorting wasn't by favorite count.
+- (Items Page) Most items that weren't supported before will now display a correct item type name instead of "undefined".
+- (Items Page) Fixed some regular items displaying a broken page.
+- (Items Page) Fixed some items having both an error page and the regular items page. (This mostly happened for Models, Decals, Etc.)
+- (Builders Club Page) Fixed some elements not showing for ROBLOX 4.0 style if the removed "ROBLOX 3.0 Layout" setting was set to classic.
+- (Friend Invitation Page) The page will now redirect to an error page if the user id is not one of the ids in the user's friend requests list.
 ### Version 2.2.1
 - More code cleanup.
 - Added "modern" recommended box for modern layout.
