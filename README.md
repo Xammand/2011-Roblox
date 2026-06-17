@@ -1,4 +1,3 @@
-**NOTICE: I will be going on vacation soon so I will be taking a break from updating this script for a while. I will probably be back in about 1-2 weeks.**
 # Roblox 2011
 [Download](#download) | 
 [Issues](#issues) | 
@@ -17,6 +16,7 @@ This script tries to make the Roblox website look as 2011 as possible!
 - Roblox Wiki: Some old header banners
 - Robloxopolis' Webcache Archives: Archives of logged in pages from 2011-2012
 - GM_Config: Settings ui for this script.
+- [An Archive of the Classic Avatar Editor](https://codepen.io/210/pen/NjxOaO)
 # Issues
 Please submit any issues you have with this script [here](https://github.com/Xammand/2011-Roblox/issues).
 # V2
@@ -32,7 +32,7 @@ This script does not support the site chat as I cannot chat and do not plan on v
 - Profile Page
 - Profile Friends Page
 - Badges Info Page
-- Avatar Editor Page (Actions don't work yet as of V2.2.0)
+- Avatar Editor Page
 - Games Page
 - Game Details Page
 - Games Search Page (Part of Catalog)
@@ -58,7 +58,8 @@ Unlike V1, you can now set settings using a UI part of the script. You can find 
    - **ROBLOX Classic:** Sets the style to what the ROBLOX website looked like in 2006-2009.
    - **ROBLOX 1.0:** Sets the style to what the ROBLOX website looked like in 2009.
    - **ROBLOX 2.0:** Sets the style to what the ROBLOX website looked like in 2010.
-   - **ROBLOX 3.0:** Sets the style to what the ROBLOX website looked like in 2011.
+   - **ROBLOX 3.0 Classic:** Sets the style to what the ROBLOX website looked like before late 2011.
+   - **ROBLOX 3.0 Modern:** Sets the style to what the ROBLOX website looked like in late 2011.
    - **ROBLOX 4.0:** Sets the style to what the ROBLOX website looked like in 2012.
 - **Sub-Style:** Sets an additional style for a style from a closer period of time.
    - **Default:** Nothing is added.
@@ -86,9 +87,6 @@ Unlike V1, you can now set settings using a UI part of the script. You can find 
    - **Default 2006-2007 Banner:** (Classic) Adds the default banner used in 2006-2007.
    - **2005-Early 2006:** (Classic) Adds the default header used in 2005-Early 2006.
    - **2005-Early 2006 Alpha:** (Classic) Adds the default header used in 2005-Early 2006 with "Alpha test" text on the banner.
-- **ROBLOX 3.0 Layout**: Sets the layout for the ROBLOX 3.0 layout as this style saw two different layouts.
-   - **Classic:** Sets the layout to the classic layout used before late 2011.
-   - **Modern:** Sets the layout to the more modern looking layout used from late 2011 to 2013.
 - **Primary Currency**: Sets the main Roblox currency you want to use.
    - **ROBUX**: Sets the primary currency as ROBUX.
    - **Tickets**: Sets the primary currency as Tickets. Your ROBUX count will be displayed as your tickets count and every item will cost Tickets.
@@ -98,5 +96,14 @@ Unlike V1, you can now set settings using a UI part of the script. You can find 
 - **Classic Play Buttons:** (Classic+) Enables the classic play buttons used from before 2009.
 - **Show Display Names on Profiles:** Shows the user's display name on their profile.
 - **Show More Stats:** More information that wasn't displayed in 2011 is displayed in the stats on the profile page.
+- **Display Items by Creator in Catalog:** Sets if you want items created by ROBLOX or not.
+   - **Everyone**
+   - **ROBLOX Except 2D Clothing**
+   - **ROBLOX Only**
+- **Rename Dynamic Heads:** Renames Dynamic Heads to Heads or Faces if chosen.
+   - **Off**
+   - **Heads**
+   - **Faces**
+- **Rename All Accessories to Hats:** Accessories didn't exist back then, and many items that were called Hats would be renamed to a type of Accessory when they were introduced, so this lets you rename them back to Hats if wanted.
 # V1 (Deprecated)
 If you want to download V1 or any other old version for some reason, you can find it [here](https://github.com/Xammand/2011-Roblox-Archive).
