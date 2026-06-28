@@ -21,9 +21,13 @@ This script tries to make the Roblox website look as 2007-2012 as possible!
 # Issues
 Please submit any issues you have with this script [here](https://github.com/Xammand/2011-Roblox/issues).
 # V2
-V2 is finally out! It is a complete rewrite that fully recreates the 2011 site as best it can with custom HTML and CSS. It doesn't depend on the modern site elements much like V1 did, which means the only real reason why a supported page could break is from a change in the ROBLOX API. Right now, this script is very unfinished and you will probably see some bugs. I have spent a lot of time making this script and hope to complete it one day (for the most part, atleast) with having most/all pages on the main url supported and also having an option to enable modern features if wanted. Now go ahead and try it. To see the changes made to V2 in an update, check the [changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md).
+V2 is finally out! It is a complete rewrite that fully recreates the classic site from 2007-2012 as best it can with custom HTML and CSS. It doesn't depend on the modern site elements much like V1 did, which means the only real reason why a supported page could break is from a change in the ROBLOX API. Right now, this script is very unfinished and you will probably see some bugs. I have spent a lot of time making this script and hope to complete it one day (for the most part, atleast) with having most/all pages on the main url supported and also having an option to enable modern features if wanted. Now go ahead and try it. To see the changes made to V2 in an update, check the [changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md).
 
 This script does not support the site chat as I cannot chat and do not plan on verifying to enable it.
+
+While the script does support the headers from 2005-2006, it mainly focuses on the layouts used from 2007-2012.
+
+And if you are wondering about the name, this was originally a Stylus userstyle that only styled the site in the 2011 style with other styles and layouts added much later and I don't feel like renaming it.
 ### Supported Pages (As of V2.9)
 - Default Page
 - Login Page
