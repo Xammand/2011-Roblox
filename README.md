@@ -4,7 +4,7 @@
 [Settings](#settings) | 
 [Changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md) | 
 [Userstyles.world (V1)](https://userstyles.world/style/3344/2011-roblox)  
-This script tries to make the Roblox website look as 2011 as possible!  
+This script tries to make the Roblox website look as 2007-2012 as possible!  
 **This script is not finished! You may see some bugs and/or unsupported pages.**  
 **This script is english only. There is no way to change the language right now.**
 
@@ -15,20 +15,22 @@ This script tries to make the Roblox website look as 2011 as possible!
 - YouTube: Old videos that show logged in pages/other related things
 - Roblox Wiki: Some old header banners
 - Robloxopolis' Webcache Archives: Archives of logged in pages from 2011-2012
-- GM_Config: Settings ui for this script.
+- GM_Config: Settings UI for this script.
 - [An Archive of the Classic Avatar Editor](https://codepen.io/210/pen/NjxOaO)
+- [Roblox Sets Archive](https://sets.pizzaboxer.xyz/) For Sets API.
 # Issues
 Please submit any issues you have with this script [here](https://github.com/Xammand/2011-Roblox/issues).
 # V2
-V2 is finally out! It is a complete rewrite that fully recreates the 2011 site as best it can with custom HTML and CSS. It doesn't depend on the modern site elements much like V1 did, which means the only real reason why a supported page could break is from a change in the ROBLOX api. As of V2.0.0, only a few pages are supported. This will obviously change in the future as more updates come out. You can see what pages are supported right now below. If there is a page you go on that is unsupported, you can disable the script in the Tampermonkey menu. Right now, this script is very unfinished and you will probably see some bugs. There are not very many settings options right now either. I have spent a lot of time making this script in a short amount of time and tried to release the first version as fast as possible so sorry if it seems rushed right now. It will obviously get better over time. It should be better than V1, atleast. Now go ahead and try it. For more information about V2, check the [changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md).
+V2 is finally out! It is a complete rewrite that fully recreates the 2011 site as best it can with custom HTML and CSS. It doesn't depend on the modern site elements much like V1 did, which means the only real reason why a supported page could break is from a change in the ROBLOX API. Right now, this script is very unfinished and you will probably see some bugs. I have spent a lot of time making this script and hope to complete it one day (for the most part, atleast) with having most/all pages on the main url supported and also having an option to enable modern features if wanted. Now go ahead and try it. To see the changes made to V2 in an update, check the [changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md).
 
-This script does not support the site chat as I cannot chat and do not plan on verifying to enable it. I don't know what the chat looks like with this script so it may or may not look broken.
-### Supported Pages (As of V2.2.0)
+This script does not support the site chat as I cannot chat and do not plan on verifying to enable it.
+### Supported Pages (As of V2.9)
 - Default Page
 - Login Page
 - Home Page
 - Inbox/Messages Page
-- PrivateMessages Page
+- Private Messages Page
+- Friend Invitation Page
 - Profile Page
 - Profile Friends Page
 - Badges Info Page
@@ -37,13 +39,13 @@ This script does not support the site chat as I cannot chat and do not plan on v
 - Game Details Page
 - Games Search Page (Part of Catalog)
 - Catalog
-- Asset Details Page
+- Asset Details Page (Items, Bundles, and Badges)
 - User and Group Search Page
 - Builders Club Page
 - ROBUX Page
 - My Stuff/Inventory Page
 - Groups Page  
-  **Note:** Right now, most, if not all, these pages are kinda unfinished. You may notice some pages missing features such as actions like making a group primary or friending/unfriending someone.
+  **Note:** Right now, most, if not all, these pages are kinda unfinished. You may notice some pages missing features such as actions like making a group primary. They will also obviously be missing modern features that may be present in that page nowadays that weren't there back then. Some pages (like the Builders Club page) may also have super outdated information like information and links to things that no longer exist and stuff like that.
 ## Download
 **Note:** This script was created in Firefox, Marble Browser V128.12.0esr to be exact. You may or may not experienece issues downloading this script if you are using a non-Firefox browser.
 1. Get Tampermonkey ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)) ([Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo))
