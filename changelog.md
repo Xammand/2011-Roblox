@@ -1,4 +1,55 @@
 # Version 2
+### Version 2.10
+10/17/26
+- More code clean up.
+- The script no longer modifies images in the /images/ folder anymore.
+- The script can now recognize some pages better.
+- Added a placeholder image that appears for any image that loads in (basically everything) but can be changed to where it's only used for avatars or just disabled.
+- Fixed some img elements randomly having extra space at the bottom, resulting in styling issues.
+- Private games now say they are locked instead of always saying friends only.
+- Moved ROBLOX 1.0 Classic from Sub-styles to Styles due to having much more differences than other Sub-styles.
+- Fixed images sometimes loading the wrong image because of similar ids.
+- Fixed the games dropdown in header (sometimes? always? idk) not opening.
+- Added Setting: Placeholder Image.
+- Added Setting: (Profile) Rename Active Places to Showcase.
+- Added Setting: (Games) Classic Game List Layout.
+- Added Setting: (Games) Show More Running Servers.
+- Renamed Setting: (Items) Rename Dynamic Heads to Dynamic Heads Name.
+- Moved Setting: Classic Play Buttons to Games Section.
+- Added Theme: Default Mid 2008 Banner.
+- (https://github.com/Xammand/2011-Roblox/issues/86) Added Theme: Christmas 2009. (ROBLOX 1.0 applies the "classic" christmas 2009 banner and ROBLOX 2.0 applies the "new" christmas 2009 banner)
+- Renamed Themes: Removed "Banner" from most ROBLOX Classic themes.
+- Renamed Theme: Early 2009 Banner to Default Early 2009.
+- Renamed Theme: Default 2008 Banner to Default Late 2008.
+- Renamed Theme: 2005-Early 2006 to Late 2005-Mid 2006.
+- Renamed Theme: 2005-Early 2006 Alpha to Late 2006 Alpha.
+- (ROBLOX Classic) Some banners are now slightly higher quality.
+- (ROBLOX Classic) Fixed the alerts box being positioned wrong on certain themes. (Builderman for President, Christmas 2007, Halloween 2007, and Default 2006-2007)
+- (ROBLOX Classic) Made theme more accurate. (The alert icons are now links, there is more space between then icon and the alert link, and alert links no longer have a title.)
+- (ROBLOX Classic & 1.0 Classic) Fixed empty space on top for "sky" background.
+- (ROBLOX 1.0) Fixed some HTML changes only occuring to ROBLOX 2.0 instead of both.
+- (ROBLOX 1.0 Classic) Fixed inbox link in submenu going to modern messages page.
+- (ROBLOX 1.0 Classic) Reverted a CSS change that made it innacurate. (Standard Boxes now have the correct color.)
+- (ROBLOX 1.0 Classic) (Home Page) Made page more accurate for that style.
+- (part of https://github.com/Xammand/2011-Roblox/issues/83) (Error Page) Removed Sky Background for ROBLOX Classic-2.0.
+- (Error Page) Fixed ROBLOX Classic themes with a custom logo showing default logo instead.
+- (Default Page) Fixed news posts not loading.
+- (Home Page) For classic layout, made page slightly more accurate by removing the link to user profile through main avatar image.
+- (Home Page) For classic layout, fixed main user image not having alt name.
+- (Home Page) Removed comma between date and time for posted date on feed item.
+- (Profile Page) The page title now displays the user's username instead of display name.
+- (Profile Page) The show display name setting now works again on the classic layout.
+- (Profile Page) Renamed "active players" to "players online" on stats of place.
+- (Games Page) Fixed the classic layout pager sometimes bugging out.
+- (Games Page) The classic layout pager no longer briefly disappears when the next page is loading.
+- (Games Page) For the classic layout, if a creator is a group then the link now goes to the group page instead of the user page.
+- (Game Details Page) (Very unlikely to have ever happened but) if the load running games button was pressed while the main game details information was still loading, the servers will now load right away instead of nothing happening.
+- (Messages Page) Fixed Inbox link in submenu not being "selected" on that page.
+- (Groups Page) Removed code for the group wall since the wall api no longer exists (RIP).
+- (Groups Page) Replaced group shout/announcements api with better api that will show the newest announcement instead of a random old one. The creator username will also display right away instead of being their id at first.
+- (Groups Page) Added missing image for join pending button on ROBLOX 4.0.
+- (Payment System Maintenance Page) Fixed page showing an error page at the top. (I dont know if you can redirect to this page anymore when the payment system is down since this page got removed but I'll keep it anyway.)
+- Small stuff.
 ### Version 2.9
 - The version number now makes a little more sense. (It is now "x.x" instead of "x.x.x").
 - (https://github.com/Xammand/2011-Roblox/issues/75, https://github.com/Xammand/2011-Roblox/issues/63) Removed the website chat.
