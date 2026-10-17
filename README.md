@@ -2,8 +2,7 @@
 [Download](#download) | 
 [Issues](#issues) | 
 [Settings](#settings) | 
-[Changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md) | 
-[Userstyles.world (V1)](https://userstyles.world/style/3344/2011-roblox)  
+[Changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md)
 This script tries to make the Roblox website look as 2007-2012 as possible!  
 **This script is not finished! You may see some bugs and/or unsupported pages.**  
 **This script is english only. There is no way to change the language right now.**
@@ -54,62 +53,117 @@ And if you are wondering about the name, this was originally a Stylus userstyle 
 **Note:** This script was created in Firefox, Marble Browser V128.12.0esr to be exact. You may or may not experienece issues downloading this script if you are using a non-Firefox browser.
 1. Get Tampermonkey ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)) ([Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo))
 2. [Get This Script.](https://github.com/Xammand/2011-Roblox/raw/refs/heads/main/roblox2011.user.js)
-3. Please disable any Roblox extensions you may have to avoid any issues they may create as this script isn't compatible with any Roblox extensions.
-4. To fully utilize the feed on the home page, make sure to turn on all group notifications.
-5. **For Google Chrome/Chromium Browsers:** You must enable developer mode in "chrome://extensions/" and enable "Allow user scripts" in Tampermonkey by right clicking on the icon and clicking "Manage extension." Otherwise, the script won't load at all.
+3. If your langauge in the Roblox website is set to something other than English then set it to English as otherwise the script won't work. (I will fix this eventually.)
+4. Please disable any Roblox extensions you may have to avoid any issues they may create as this script isn't compatible with any Roblox extensions.
+5. To fully utilize the feed on the home page, make sure to turn on all group notifications.
+6. **For Google Chrome/Chromium Browsers:** You must enable developer mode in "chrome://extensions/" and enable "Allow user scripts" in Tampermonkey by right clicking on the icon and clicking "Manage extension." Otherwise, the script won't load at all.
 ## Settings
 Unlike V1, you can now set settings using a UI part of the script. You can find the settings by clicking the Tampermonkey icon, going to the ROBLOX 2011 script, and clicking "ROBLOX 2011 Settings." You can now also temporarily disable the script if you want by pressing "Disable ROBLOX 2011."  
 ![alt text](https://i.imgur.com/3kIoCDW.png "Settings")
+### General
 - **General Style:** Sets the style you want to use. Each style is based on how the ROBLOX site looked like from 2006-2012.
-   - **ROBLOX Classic:** Sets the style to what the ROBLOX website looked like in 2006-2009.
-   - **ROBLOX 1.0:** Sets the style to what the ROBLOX website looked like in 2009.
-   - **ROBLOX 2.0:** Sets the style to what the ROBLOX website looked like in 2010.
-   - **ROBLOX 3.0 Classic:** Sets the style to what the ROBLOX website looked like before late 2011.
-   - **ROBLOX 3.0 Modern:** Sets the style to what the ROBLOX website looked like in late 2011.
+   - **ROBLOX Classic:** Sets the style to what the ROBLOX website looked like in 2007-2009.
+   - **ROBLOX 1.0 Classic:** Sets the style to what the ROBLOX website looked like in August 2009.
+   - **ROBLOX 1.0:** "ROBLOX 1.0" was an official website theme back then, it was essentially ROBLOX 2.0 but with a different banner and slight CSS changes. This is the only style that wasn't actually used in the website as the default.
+   - **ROBLOX 2.0:** Sets the style to what the ROBLOX website looked like in October 2009.
+   - **ROBLOX 3.0 Classic:** Sets the style to what the ROBLOX website looked like before Late 2011.
+   - **ROBLOX 3.0 Modern:** Sets the style to what the ROBLOX website looked like in Late 2011.
    - **ROBLOX 4.0:** Sets the style to what the ROBLOX website looked like in 2012.
 - **Sub-Style:** Sets an additional style for a style from a closer period of time.
    - **Default:** Nothing is added.
-   - **ROBLOX Classic BKG**: Adds the 1.0-2.0 background to the classic style, this sub-style would've been used towards the end of the ROBLOX Classic style in 2009.
-   - **ROBLOX 1.0 Classic:** Sets the ROBLOX 1.0 style to an earlier version that used the ROBLOX Classic header and slight css changes.
+   - **ROBLOX Classic BKG:** Adds the 1.0-2.0 background to the classic style, this sub-style would've been used towards the end of the ROBLOX Classic style in 2009.
    - **Early ROBLOX 3.0:** Sets the ROBLOX 3.0 style to an earlier version from 2010 that used a layout closer to the 1.0 and 2.0 layout.
    - **ROBLOX 3.0 Small Header:** Adds the small version of the header to the ROBLOX 3.0 style.
    - **Early 2012 ROBLOX 4.0:** Sets the ROBLOX 4.0 style to an earlier version from early 2012 that used a "brighter" header.
-- **Theme:** Sets a theme for the selected style, not all listed themes can be used for all styles.
-   - **OBC:** (1.0+) Adds the OBC theme that was used for the supported styles.
-   - **Parent Edition:** (2.0+) Adds the Parent Edition banner that was used when you logged into a parent account back then.
-   - **Test Server:** (Classic+) Adds the Test Server background that was used for the supported styles which was used for ROBLOX test sites back then.
-   - **Christmas 2011:** (3.0) Adds the Christmas banner, background, and logo that was used in 2011.
-   - **Thanksgiving 2011:** (3.0) Adds the Thanksgiving banner, background, and logo that was used in 2011.
-   - **Halloween 2011:** (3.0) Adds the Halloween banner, background, and logo that was used in 2011.
-   - **Christmas 2010:** (3.0) Adds the Christmas banner, background, and logo that was used in 2010.
-   - **Thanksgiving 2010:** (3.0) Adds the Thanksgiving banner, background, and logo that was used in 2010.
-   - **Halloween 2010:** (3.0) Adds the Halloween banner, background, and logo that was used in 2010.
-   - **Early 2009 Banner:** (Classic) Adds the banner that was used in early 2009.
-   - **Christmas 2008 Banner:** (Classic) Adds the christmas banner that was used in 2008.
-   - **Default 2008 Banner:** (Classic) Adds the default banner that was used in 2008.
-   - **"Builderman for President" Banner:** (Classic) Adds the banner from Early 2008 that was made to celebrate the 2008 U.S. election.
-   - **Christmas 2007 Banner:** (Classic) Adds the Christmas banner used in 2007.
-   - **Halloween 2007 Banner:** (Classic) Adds the Halloween banner used in 2007.
-   - **Default 2006-2007 Banner:** (Classic) Adds the default banner used in 2006-2007.
-   - **2005-Early 2006:** (Classic) Adds the default header used in 2005-Early 2006.
-   - **2005-Early 2006 Alpha:** (Classic) Adds the default header used in 2005-Early 2006 with "Alpha test" text on the banner.
-- **Primary Currency**: Sets the main Roblox currency you want to use.
-   - **ROBUX**: Sets the primary currency as ROBUX.
-   - **Tickets**: Sets the primary currency as Tickets. Your ROBUX count will be displayed as your tickets count and every item will cost Tickets.
-- **Builders Club Logo**: Lets you pick what BC logo to use since ROBLOX doesn't display tiers anymore.
+- **Theme:** Sets a theme for the selected style, most themes only work for one style. (See [Themes](#Themes) for a full list of themes.)
+- **Builders Club Logo:** Lets you pick what BC logo to use since ROBLOX doesn't display tiers anymore.
+   - **BC**
+   - **TBC**
+   - **OBC**
+- **Primary Currency:** Sets the main Roblox currency you want to use.
+   - **ROBUX:** Sets the primary currency as ROBUX.
+   - **Tickets:** Sets the primary currency as Tickets. Your ROBUX count will be displayed as your tickets count and every item will cost Tickets.
+- **Placeholder Image:** The website used a placeholder image for any image that loads after the site has loaded. Back then, avatars were really the only ones that loaded later but now essentially everything does due to most images being loaded through the API. This lets you choose whether you want a placeholder image on everything, or just avatars.
+   - **All:** Every image that loads through the API will have a placeholder image.
+   - **Avatars:** Only avatars will have a placeholder image.
+   - **Off:** Nothing will have a placeholder image.
 - **Fake Status:** A text box that lets you add a fake status to your home and profile page. Only you can see this. You can also add a fake status on the site itself.
 - **Enable Header Twitter Button:** (1.0-Early 4.0) Enables the hidden Twitter button in the header next to the news link.
-- **Classic Play Buttons:** (Classic+) Enables the classic play buttons used from before 2009.
-- **Show Display Names on Profiles:** Shows the user's display name on their profile.
-- **Show More Stats:** More information that wasn't displayed in 2011 is displayed in the stats on the profile page.
+### Default
+- **Feature Classic Games:** Randomly picks a classic game that was featured back then from a list and shows it as the featured game on the default page. The game that is featured will always change when the page is refreshed.
+### Profile
+- **Show Display Name:** Shows the user's display name on their profile.
+- **Show More Stats:** More information that wasn't displayed in 2011 is shown in the stats on the profile page.
+- **Show Sets Box:** (3.0 Modern+) Shows the sets box and any sets the user may have created or subscribed to back when they existed.
+- **Show Groups Box:** Shows the groups box and any groups the user may be in. This box was added to the profile page in Mid 2009, when Groups were created.
+- **Show Favorites Box:** Shows the favorites box and any favorites the user may have. This box was added to the profile page in Mid 2008.
+### Games
+- **Classic Game List Layout:** (2.0 and below) Enables the classic game list layout used before 2009. Any style above 2.0 will not work since the layout used for them is the "modern" game list layout.
+- **Classic Play Buttons:** Enables the classic play button design used from before 2009.
+- **Show More Running Servers:** Increases the number of running servers shown from 5 to 10. In 2009, the number shown was increased to ten and then later decreased back to 5 for some reason. Despite only being a 2009 thing, this is on by default.
+### Items
 - **Display Items by Creator in Catalog:** Sets if you want items created by ROBLOX or not.
    - **Everyone**
    - **ROBLOX Except 2D Clothing**
    - **ROBLOX Only**
-- **Rename Dynamic Heads:** Renames Dynamic Heads to Heads or Faces if chosen.
-   - **Off**
+- **Dynamic Heads Name:** Names Dynamic Heads to whatever is chosen.
+   - **Dynamic Heads**
    - **Heads**
    - **Faces**
 - **Rename All Accessories to Hats:** Accessories didn't exist back then, and many items that were called Hats would be renamed to a type of Accessory when they were introduced, so this lets you rename them back to Hats if wanted.
+# Themes
+This script supports many themes that were used in many of the supported layouts. Some themes use their original images that were archived in the Wayback Machine and some are merely recreations taken from screenshots or YouTube videos due to never being archived. This list will be sorted by what layout they are for and will also display information such as if they are a recreation or not.
+## ROBLOX Classic
+- **Late 2005-Mid 2006:** (Recreation from Roblox Wiki) The header from Late 2005-Mid 2006.
+- **Late 2006 Alpha:** (Recreation from Roblox Wiki) The header from Late 2006, same as Late 2005-Mid 2006 header but with "Alpha test" text on the banner.
+- **Default 2006-2007:** (Archived Original) The default banner from Very Late 2006-2007.
+- **Halloween 2007:** (Archived Original) The Halloween banner from 2007.
+- **Christmas 2007:** (Archived Original) The Christmas banner and logo from 2007.
+- **"Builderman for President":** (Recreation from Roblox Wiki) The banner and logo from Early 2008 that was made to celebrate the 2008 U.S. election.
+- **Default Mid 2008:** (Recreation by Xammand) The default banner from Mid 2008. Recreated by using parts of screenshots and the late 2008 banner.
+- **Default Late 2008:** (Archived Original) The default banner from Late 2008, same as Mid 2008 except the slogan is "Think. Create." instead of "Imagine. Build." and the left side is slightly shorter.
+- **Christmas 2008:** (Image from Roblox Wiki) The Christmas banner from 2008.
+- **Early 2009:** (Recreation from Roblox Wiki) The default banner from Early 2009.
+- **Default:** (Archived Original) The default banner that was used from Early/Mid 2009.
+- **Test Server:** (Archived Original) The Test Server background that was used for ROBLOX test sites from 2007-2010.
+## ROBLOX 1.0 Classic
+- **Default:** (Archived Original) The default banner that was used from Early/Mid 2009.
+- **Test Server:** (Archived Original) The Test Server background that was used for ROBLOX test sites from 2007-2010.
+## ROBLOX 1.0
+- **Default:** (Archived Original) The default ROBLOX 1.0 banner, a modified version of the Default ROBLOX Classic banner with a larger ROBLOX logo.
+- **Christmas 2009:** (Recreation by Xammand) The classic varient of the Christmas theme from 2009. Recreated by screenshoting the banner from a 720p YouTube video.
+- **OBC:** (Archived Original) The "Version 1.0" OBC theme from Late 2009-2010.
+- **Parent Edition:** The ROBLOX Parent Edition banner from Late 2009-2012, not technically a theme but leaving it as an option anyway for this script.
+- **Test Server:** (Archived Original) The Test Server background that was used for ROBLOX test sites from 2007-2010.
+## ROBLOX 2.0
+- **Default:** (Archived Original) The default 2.0 theme from Very Late 2009.
+- **Christmas 2009:** (Recreation by Xammand) The Christmas theme from 2009. Recreated by screenshoting the banner from a 720p YouTube video and manually removing HTML elements from the screenshot using Paint.NET with various techniques (no AI).
+- **OBC:** (Archived Original) The "Version 1.0" OBC theme from Late 2009-2010.
+- **Parent Edition:** The ROBLOX Parent Edition banner from Late 2009-2012, not technically a theme but leaving it as an option anyway for this script.
+- **Test Server:** (Archived Original) The Test Server background that was used for ROBLOX test sites from 2007-2010.
+## ROBLOX 3.0
+- **Default:** (Archived Original) The default theme from Mid 2010-2012.
+- **OBC:** (Archived Original) The "Version 2.0" OBC theme from Mid 2010-2012.
+- **Parent Edition:** The ROBLOX Parent Edition banner from Late 2009-2012, not technically a theme but leaving it as an option anyway for this script.
+- **Halloween 2010:** (Banner: Image from Roblox Wiki | Background: Recreation by Xammand, based on YouTube Video screenshot, used AI to upscale image) The Halloween theme from 2010.
+- **Thanksgiving 2010:** (Recreation by Xammand, based on YouTube Video screenshots, used AI to upscale images) The Thanksgiving theme from 2010.
+- **Christmas 2010:** (Banner: Recreation by Xammand, based on Roblox Blog screenshot and used parts of Christmas 2011 Banner, basically as original as it can get, no AI | Background: Archived Original, same as Christmas 2011 background) The Christmas theme from 2010.
+- **Halloween 2011:** (Archived Original) The Halloween theme from 2011.
+- **Thanksgiving 2011:** (Archived Original) The Thanksgiving theme from 2011.
+- **Christmas 2011:** (Archived Original) The Christmas theme from 2011.
+- **Test Server:** (Archived Original) The Test Server background that was used for ROBLOX test sites from 2010-2012.
+## ROBLOX 4.0
+- **Default:** (Archived Original) The default theme from 2012.
+- **OBC:** (Archived Original) The OBC theme from 2012.
+## Recreations
+These are the recreated themes, some are better than others and most of them are in poor quality but it's better than nothing. If you happen to have the original or a higher quality image for one of these banners or are willing to recreate them in higher quality, feel free to make an [issue](https://github.com/Xammand/2011-Roblox/issues) talking about it! It would be greatly appreciated!
+- **Late 2005-Mid 2006:** (Roblox Wiki)
+- **Late 2006 Alpha:** (Roblox Wiki)
+- **Default Mid 2008:** (Xammand)
+- **Early 2009:** (Roblox Wiki)
+- **Christmas 2009:** (Xammand)
+- **Halloween 2010:** (Banner: Original | Background: Recreation by Xammand)
+- **Thanksgiving 2010:** (Xammand)
+- **Christmas 2010:** (Banner: Recreation by Xammand | Background: Original, same as Christmas 2011 background)
 # V1 (Deprecated)
 If you want to download V1 or any other old version for some reason, you can find it [here](https://github.com/Xammand/2011-Roblox-Archive).
