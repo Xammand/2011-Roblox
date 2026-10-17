@@ -1,5 +1,6 @@
 # Roblox 2011
 [Download](#download) | 
+[User Ads](#user-ads) | 
 [Issues](#issues) | 
 [Settings](#settings) | 
 [Changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md)  
@@ -57,6 +58,9 @@ And if you are wondering about the name, this was originally a Stylus userstyle 
 4. Please disable any Roblox extensions you may have to avoid any issues they may create as this script isn't compatible with any Roblox extensions.
 5. To fully utilize the feed on the home page, make sure to turn on all group notifications.
 6. **For Google Chrome/Chromium Browsers:** You must enable developer mode in "chrome://extensions/" and enable "Allow user scripts" in Tampermonkey by right clicking on the icon and clicking "Manage extension." Otherwise, the script won't load at all.
+## User Ads
+[Get the script](https://github.com/Xammand/2011-Roblox/raw/refs/heads/main/roblox2011userads.user.js)  
+ROBLOX 2011 now has a seperate script that loads user ads that were shown back then! These are obviously fake but greatly increases that classic experience! The download is the same as ROBLOX 2011.
 ## Settings
 Unlike V1, you can now set settings using a UI part of the script. You can find the settings by clicking the Tampermonkey icon, going to the ROBLOX 2011 script, and clicking "ROBLOX 2011 Settings." You can now also temporarily disable the script if you want by pressing "Disable ROBLOX 2011."  
 ![alt text](https://i.imgur.com/3kIoCDW.png "Settings")
