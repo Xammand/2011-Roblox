@@ -2,7 +2,7 @@
 [Download](#download) | 
 [Issues](#issues) | 
 [Settings](#settings) | 
-[Changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md)
+[Changelog](https://github.com/Xammand/2011-Roblox/blob/main/changelog.md)  
 This script tries to make the Roblox website look as 2007-2012 as possible!  
 **This script is not finished! You may see some bugs and/or unsupported pages.**  
 **This script is english only. There is no way to change the language right now.**
