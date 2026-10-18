@@ -1,5 +1,11 @@
 [Version 2](#version-2) | [User Ads](#user-ads)
 # Version 2
+### Version 2.10.1
+10/18/26
+- (https://github.com/Xammand/2011-Roblox/issues/95) Fixed images not loading if the placeholder image was avatars or off.
+- (https://github.com/Xammand/2011-Roblox/issues/89) (Catalog Page) The featured items section now actually shows featured items.
+- (Catalog Page) Fixed item's name link always going to "/catalog/" even if the item was a bundle.
+- (Catalog Page) Added support for decals and models.
 ### Version 2.10
 10/17/26
 - More code clean up.
