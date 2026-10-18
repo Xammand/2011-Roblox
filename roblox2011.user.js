@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ROBLOX 2011 V2
 // @namespace    http://tampermonkey.net/
-// @version      2.10
+// @version      2.10.1
 // @description  try to take over the world!
 // @author       Xammand
 // @match        *://www.roblox.com/*
@@ -1247,7 +1247,7 @@ GM_registerMenuCommand('Disable ROBLOX 2011', function() {
     };
     function mImg2(h,w,id,n,a=false,e='') {
         let img;
-        if ((con.loadimg === 'Avatars' && !a) || con.loadimg === 'Off') img = `<img id="${id}" src="/Thumbs/blank.gif" height="${h}" width="${w}" border="0" alt="${n}" ${e}>`;
+        if ((con.loadimg === 'Avatars' && !a) || con.loadimg === 'Off') img = `<img class="${id}" src="/Thumbs/blank.gif" height="${h}" width="${w}" border="0" alt="${n}" ${e}>`;
         else img = `<img class="${id}" src="${di.Thumbs.Unavailable}" height="${h}" width="${w}" border="0" alt="${n}" ${e}><img style="position: absolute; left: 0px; top: 0px; height: 16px; width: 16px; border: 0px;" src="/Thumbs/ProgressIndicator.gif">`;
         return img;
     };
@@ -3722,7 +3722,6 @@ GM_registerMenuCommand('Disable ROBLOX 2011', function() {
                 'PastWeek': 'Past Week',
                 'AllTime': 'All Time',
             };
-            console.log(page);
             async function searchCatalog(val) {
                 let cat = 1;
                 let subcat = 1;
@@ -3747,7 +3746,6 @@ GM_registerMenuCommand('Disable ROBLOX 2011', function() {
                 let SortAggregation = 5;
                 if (time === 'PastDay') SortAggregation = 1;
                 if (time === 'PastWeek') SortAggregation = 3;
-                console.log(`https://catalog.roblox.com/v1/search/items/details?keyword=${val}${cat > 1 ? `&category=${cat}` : ''}${subcat > 1 ? `&subcategory=${subcat}` : ''}&sorttype=${sortType}&SortAggregation=${SortAggregation}&MinPrice=${min}&MaxPrice=${max}${r ? `&CreatorType=1&CreatorTargetId=1` : ''}&IncludeNotForSale=true&limit=30&cursor=`);
                 let pager = createPager({
                     id: val,
                     type: 'Catalog',
@@ -3755,7 +3753,7 @@ GM_registerMenuCommand('Disable ROBLOX 2011', function() {
                     container: '#ctl00_cphRoblox_rbxCatalog_AssetsDataList',
                     pagerContainer: '#ctl00_cphRoblox_rbxCatalog_FooterPagerPanel',
                     currentTotal: true,
-                    fetchPage: (c) => getAPI(page === 'Collectible' ? `https://catalog.roblox.com/v2/search/items/details?salesTypeFilter=2&IncludeNotForSale=true${r ? `&CreatorType=1&CreatorTargetId=1` : ''}&limit=120` : `https://catalog.roblox.com/v1/search/items/details?keyword=${val}${cat > 1 ? `&category=${cat}` : ''}${subcat > 1 ? `&subcategory=${subcat}` : ''}&sorttype=${sortType}&SortAggregation=${SortAggregation}&MinPrice=${min}&MaxPrice=${max}${r ? `&CreatorType=1&CreatorTargetId=1` : ''}&IncludeNotForSale=true&limit=30&cursor=${c}`),
+                    fetchPage: (c) => getAPI(page === 'Collectible' ? `https://catalog.roblox.com/v2/search/items/details?salesTypeFilter=2&IncludeNotForSale=true${r ? `&CreatorType=1&CreatorTargetId=1` : ''}&limit=120` : page === 'Featured' ? `https://catalog.roblox.com/v2/search/items/details?CategoryFilter=1&SalesTypeFilter=1&limit=120&sortOrder=Desc` : `https://catalog.roblox.com/v1/search/items/details?keyword=${val}${cat > 1 ? `&category=${cat}` : ''}${subcat > 1 ? `&subcategory=${subcat}` : ''}&sorttype=${sortType}&SortAggregation=${SortAggregation}&MinPrice=${min}&MaxPrice=${max}${r ? `&CreatorType=1&CreatorTargetId=1` : ''}&IncludeNotForSale=true&limit=30&cursor=${c}`),
                     renderItems: async (d,p) => {
                         if (d.length > 0) {
                             let assetIds = d.filter(a => a.itemType === 'Asset').map(a => a.id);
@@ -3764,7 +3762,7 @@ GM_registerMenuCommand('Disable ROBLOX 2011', function() {
                             let bImg = getThumbnail(bundleIds, 'BundleThumbnail', '150x150');
                             let rows = [];
                             for (let i = 0; i < d.length; i += 5) {
-                                let row = d.slice(i, i + 5).map(a => `<td valign="top"><div class="Asset" style="margin-left:5px;margin-right:5px;"><div class="AssetThumbnail"><a id="ctl00_cphRoblox_rbxCatalog_AssetsDataList_ctl00_AssetThumbnailHyperLink" title="${a.name}" href="${a.itemType === 'Asset' ? '/catalog/' : '/bundles/'}${a.id}" style="display:inline-block;height:110px;width:110px;cursor:pointer;position:relative;">${mImg2(110,110,`${a.itemType === 'Asset' ? 'asset' : 'bundle'} ${a.id}`,a.name)}</a>${(a.itemRestrictions.includes('Collectible') || a.itemRestrictions.includes('LimitedUnique')) ? `<div style="position:relative;left:-12px;top:-13px;"><img src="https://images.rbxcdn.com/1c3d939e33134e7266678e510e774ac2.png"></div>` : ''}${a.itemRestrictions.includes('Limited') ? `<div style="position:relative;left:-21px;top:-13px;"><img src="https://images.rbxcdn.com/532e54e5ff6266bbf26e583dab4d6765.png"></div>` : ''}</div><div class="AssetDetails"><div class="AssetName"><a id="ctl00_cphRoblox_rbxCatalog_AssetsDataList_ctl00_AssetNameHyperLink" href="/catalog/${a.id}">${a.name}</a></div><div class="AssetLastUpdate"><span class="Label">Updated: </span><span class="Detail">${timeAgo(a.itemCreatedUtc)}</span></div><div class="AssetCreator"><span class="Label">Creator: </span><span class="Detail"><a id="ctl00_cphRoblox_rbxCatalog_AssetsDataList_ctl00_CreatorHyperLink" href="${a.creatorType === 'User' ? `/User.aspx?ID=` : `/Groups/group.aspx?gid=`}${a.creatorTargetId}">${a.creatorName}</a></span></div><div class="AssetsSold"><span class="Label">Number Sold: </span><span class="Detail">${a.unitsAvailableForConsumption > 0 ? comma(a.totalQuantity - a.unitsAvailableForConsumption) : a.totalQuantity > 0 ? comma(a.totalQuantity) : '0'}</span></div>${(a.itemRestrictions.includes('Collectible') || a.itemRestrictions.includes('LimitedUnique')) ? `<div class="AssetsSold"><span class="Label" style="color:#cc0000;">Remaining: </span><span class="Detail">${comma(a.unitsAvailableForConsumption)}</span></div>` : ''}<div class="AssetFavorites"><span class="Label">Favorited: </span><span class="Detail">${comma(a.favoriteCount)} times</span></div>${(a.isOffSale || a?.price === 0 && !a?.itemRestrictions.includes('Collectible') && !a?.itemRestrictions.includes('Limited') && !a?.itemRestrictions.includes('LimitedUnique')) ? '' : `<div class="AssetPrice"><span class="${robux ? `PriceInRobux">R$` : `PriceInTickets">Tx`}: ${a.hasResellers ? comma(a.lowestResalePrice) : comma(a.price)}</span></div>`}</div></div></td>`).join('');
+                                let row = d.slice(i, i + 5).map(a => `<td valign="top"><div class="Asset" style="margin-left:5px;margin-right:5px;"><div class="AssetThumbnail"><a id="ctl00_cphRoblox_rbxCatalog_AssetsDataList_ctl00_AssetThumbnailHyperLink" title="${a.name}" href="${a.itemType === 'Asset' ? '/catalog/' : '/bundles/'}${a.id}" style="display:inline-block;height:110px;width:110px;cursor:pointer;position:relative;">${mImg2(110,110,`${a.itemType === 'Asset' ? 'asset' : 'bundle'} ${a.id}`,a.name)}</a>${(a.itemRestrictions.includes('Collectible') || a.itemRestrictions.includes('LimitedUnique')) ? `<div style="position:relative;left:-12px;top:-13px;"><img src="https://images.rbxcdn.com/1c3d939e33134e7266678e510e774ac2.png"></div>` : ''}${a.itemRestrictions.includes('Limited') ? `<div style="position:relative;left:-21px;top:-13px;"><img src="https://images.rbxcdn.com/532e54e5ff6266bbf26e583dab4d6765.png"></div>` : ''}</div><div class="AssetDetails"><div class="AssetName"><a id="ctl00_cphRoblox_rbxCatalog_AssetsDataList_ctl00_AssetNameHyperLink" href="${a.itemType === 'Asset' ? '/catalog/' : '/bundles/'}${a.id}">${a.name}</a></div><div class="AssetLastUpdate"><span class="Label">Updated: </span><span class="Detail">${timeAgo(a.itemCreatedUtc)}</span></div><div class="AssetCreator"><span class="Label">Creator: </span><span class="Detail"><a id="ctl00_cphRoblox_rbxCatalog_AssetsDataList_ctl00_CreatorHyperLink" href="${a.creatorType === 'User' ? `/User.aspx?ID=` : `/Groups/group.aspx?gid=`}${a.creatorTargetId}">${a.creatorName}</a></span></div><div class="AssetsSold"><span class="Label">Number Sold: </span><span class="Detail">${a.unitsAvailableForConsumption > 0 ? comma(a.totalQuantity - a.unitsAvailableForConsumption) : a.totalQuantity > 0 ? comma(a.totalQuantity) : '0'}</span></div>${(a.itemRestrictions.includes('Collectible') || a.itemRestrictions.includes('LimitedUnique')) ? `<div class="AssetsSold"><span class="Label" style="color:#cc0000;">Remaining: </span><span class="Detail">${comma(a.unitsAvailableForConsumption)}</span></div>` : ''}<div class="AssetFavorites"><span class="Label">Favorited: </span><span class="Detail">${comma(a.favoriteCount)} times</span></div>${(a.isOffSale || a?.price === 0 && !a?.itemRestrictions.includes('Collectible') && !a?.itemRestrictions.includes('Limited') && !a?.itemRestrictions.includes('LimitedUnique')) ? '' : `<div class="AssetPrice"><span class="${robux ? `PriceInRobux">R$` : `PriceInTickets">Tx`}: ${a.hasResellers ? comma(a.lowestResalePrice) : comma(a.price)}</span></div>`}</div></div></td>`).join('');
                                 rows.push(`<tr>${row}</tr>`);
                             };
                             p.$container.html(`<tbody>${rows.join('')}</tbody>`);
@@ -3816,6 +3814,41 @@ GM_registerMenuCommand('Disable ROBLOX 2011', function() {
                 });
                 await pager.init();
             };
+        async function searchLibrary(val) {
+            let pager = createPager({
+                id: val,
+                type: 'Catalog',
+                pageSize: 20,
+                container: '#ctl00_cphRoblox_rbxCatalog_AssetsDataList',
+                pagerContainer: '#ctl00_cphRoblox_rbxCatalog_FooterPagerPanel',
+                currentTotal: true,
+                fetchPage: (c) => postAPI(`https://apis.roblox.com/toolbox-service/v2/assets:search`,{maxPageSize: 100, pageNumber: 1, searchCategoryType: category === '13' ? 'Decal' : 'Model', sortCategory: 'Ratings'},true),
+                parsePage: (d) => {
+                    let items = d.creatorStoreAssets || [];
+                    let nextCursor = null;
+                    return {items,nextCursor};
+                },
+                prefetch: async (d) => {
+                    let tokens = d.flatMap(s => s.playerTokens);
+                    let imgs = await getServerAvatars(tokens);
+                    return imgs;
+                },
+                renderItems: async (d,p) => {
+                    console.log(d);
+                    if (d.length > 0) {
+                        let ids = d.map(a => a.asset.id);
+                        let rows = [];
+                        for (let i = 0; i < d.length; i += 5) {
+                            let row = d.slice(i, i + 5).map(a => `<td valign="top"><div class="Asset" style="margin-left:5px;margin-right:5px;"><div class="AssetThumbnail"><a id="ctl00_cphRoblox_rbxCatalog_AssetsDataList_ctl00_AssetThumbnailHyperLink" title="${a.asset.name}" href="/catalog/${a.asset.id}" style="display:inline-block;height:110px;width:110px;cursor:pointer;position:relative;">${mImg2(110,110,`item ${a.asset.id}`,a.asset.name)}</a></div><div class="AssetDetails"><div class="AssetName"><a id="ctl00_cphRoblox_rbxCatalog_AssetsDataList_ctl00_AssetNameHyperLink" href="/catalog/${a.asset.id}">${a.asset.name}</a></div><div class="AssetLastUpdate"><span class="Label">Updated: </span><span class="Detail">${timeAgo(a.asset.updateTime)}</span></div><div class="AssetCreator"><span class="Label">Creator: </span><span class="Detail"><a id="ctl00_cphRoblox_rbxCatalog_AssetsDataList_ctl00_CreatorHyperLink" href="${a.creator.creator === 'user' ? `/User.aspx?ID=` : `/Groups/group.aspx?gid=`}${a.creator.userId}">${a.creator.name}</a></span></div><div class="AssetsSold"><span class="Label">Number Sold: </span><span class="Detail">0</span></div><div class="AssetFavorites"><span class="Label">Favorited: </span><span class="Detail">${comma(a.voting.upVotes)} times</span></div>${!a.creatorStoreProduct.purchasable ? '' : `<div class="AssetPrice"><span class="${robux ? `PriceInRobux">R$` : `PriceInTickets">Tx`}: ${comma(a.creatorStoreProduct.purchasePrice.quantity.exponent)}</span></div>`}</div></div></td>`).join('');
+                            rows.push(`<tr>${row}</tr>`);
+                        };
+                        p.$container.html(`<tbody>${rows.join('')}</tbody>`);
+                        lImg2(getThumbnail(ids,'Asset','110x110'),'item');
+                    } else p.$container.replaceWith(`<div id="ctl00_cphRoblox_rbxCatalog_NoItems" style="padding:15px;font-weight:bold;text-align:center;"><span>There are no items to display!</span></div>`);
+                }
+            });
+            await pager.init();
+        };
             $(document).on('keypress', '#ctl00_cphRoblox_rbxCatalog_SearchTextBox', function(e) {
                 if (e.which === 13) {
                     params.set('q', $(this).val());
@@ -3841,11 +3874,9 @@ GM_registerMenuCommand('Disable ROBLOX 2011', function() {
                 e.preventDefault();
                 return false;
             });
-            if (category === '9') {
-                searchCatalogGames(params.get('q') || '');
-            } else {
-                searchCatalog(params.get('q') || '');
-            };
+        if (category === '10' || category === '13') searchLibrary(params.get('q') || '');
+        else if (category === '9') searchCatalogGames(params.get('q') || '');
+        else searchCatalog(params.get('q') || '');
             let classicPage = (classicStyles || substyle === 'Early ROBLOX 3.0');
             let gamesBullet = `<img id="ctl00_cphRoblox_rbxCatalog_BrowseModeFeaturedBullet" class="GamesBullet" src="${di.games_bullet}" border="0">&nbsp;`;
             buildMainPage(`<div id="CatalogContainer">
