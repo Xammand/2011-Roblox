@@ -302,6 +302,9 @@ This is basically an update I made a while ago but never uploaded until now. The
 - A bunch of other stuff I forgot to put here.
 - Less buggy.
 # User Ads
+### Version 1.2
+10/27/26
+- Fixed some ads not loading in. (whoops)
 ### Version 1.1
 10/27/26
 - (https://github.com/Xammand/2011-Roblox/issues/96) Fixed the script interfering with certain functionalities such as not being able to load into the client when starting a game.
