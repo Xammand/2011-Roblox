@@ -58,6 +58,7 @@
 - (Payment System Maintenance Page) Fixed page showing an error page at the top. (I dont know if you can redirect to this page anymore when the payment system is down since this page got removed but I'll keep it anyway.)
 - Small stuff.
 ### Version 2.9
+6/24/26
 - The version number now makes a little more sense. (It is now "x.x" instead of "x.x.x").
 - (https://github.com/Xammand/2011-Roblox/issues/75, https://github.com/Xammand/2011-Roblox/issues/63) Removed the website chat.
 - (https://github.com/Xammand/2011-Roblox/issues/73) Most supported pages now have an accurate page title.
@@ -83,7 +84,8 @@
 - (Send Friend Request Page) Added the ability to send friend request.
 - (Group Page) More of a member's username is now displayed on classic layout.
 ### Version 2.2.2
-(Version 2.8)
+(Version 2.8)  
+6/17/26
 - More code cleanup.
 - Added Style: ROBLOX 3.0 Modern.
 - Added Style: ROBLOX 3.0 Classic.
@@ -123,7 +125,8 @@
 - (Builders Club Page) Fixed some elements not showing for ROBLOX 4.0 style if the removed "ROBLOX 3.0 Layout" setting was set to classic.
 - (Friend Invitation Page) The page will now redirect to an error page if the user id is not one of the ids in the user's friend requests list.
 ### Version 2.2.1
-(Version 2.7)
+(Version 2.7)  
+5/31/26
 - More code cleanup.
 - Added "modern" recommended box for modern layout.
 - The recommended box now supports bundles.
@@ -152,7 +155,8 @@
 - (Groups Page) On modern layout, a loading icon will now appear when you switch roles.
 - (Groups Page) Fixed a semi-rare case where the membercount for a role is displayed as 0 even though there are members in that role resulting in those members not being displayed (Usually only *sometimes* occured in groups with barely any members? Roblox API is wack....).
 ### Version 2.2.0
-(Version 2.6)
+(Version 2.6)  
+5/25/26
 - More code cleanup.
 - Unsupported pages will now disable the script on that page instead of showing a big unstyled mess of HTML.
 - Added support for Badges Info page.
@@ -170,7 +174,8 @@
 - (Items Page) The favorite button for classic styles (ROBLOX 2.0 and before) now functions correctly.
 - (Items Page) Added "modern" favorite button for Modern ROBLOX 3.0 and 4.0.
 ### Version 2.1.2
-(Version 2.5)
+(Version 2.5)  
+5/20/26
 - Added setting "Primary Currency". You can choose if you want ROBUX or Tickets as your primary currency. If you choose tickets, your robux amount will be displayed as your Tickets amount in the header and every item will cost Tickets instead of ROBUX.
 - Added support for the Default page.
 - Added support for the Badges page.
@@ -183,7 +188,8 @@
 - (Items Page) Recommended item creator link for groups now have the group url instead of user url.
 - (Game Details Page) Fixed recommended games not showing for any game.
 ### Version 2.1.1
-(Version 2.4)
+(Version 2.4)  
+5/16/26
 - Major code clean up (put most of the api functions into one function).
 - Removed some pile of trash code that is litteraly just a pile of trash.
 - Added support for "modern" layout for Inbox/Messages and PrivateMessages pages.
@@ -203,7 +209,8 @@
 - (PrivateMessages Page) Fixed bug where any "system account" that wasn't Roblox (builderman) was named Roblox as the author. (builderman is considered a system account in the api now but was still considered a regular account back then.)
 - (PrivateMessages Page) Fixed missing title attribute for author username.
 ### Version 2.1.0
-(Version 2.3)
+(Version 2.3)  
+5/12/26
 - Added support for the "modern" layout for home, game details, and group pages.
 - Changed code that detects what page you're on by now making it target a more exact url.
 - Renamed "General Layout" setting to "ROBLOX 3.0 Layout".
@@ -216,7 +223,8 @@
 - (Game Details Page) Fixed basically every game displaying "genre enforced gear" in the gear section even if the game has gear disabled.
 - (Groups Page) Added support for group announcements since it seems classic shouts were removed from the api.
 ### Version 2.0.2
-(Version 2.2)
+(Version 2.2)  
+5/4/26
 This is basically an update I made a while ago but never uploaded until now. The reason why it took so long was because I was trying to figure out a way to get buying/getting catalog items working but it seems thats not really possible with this script so it probably will never support that unless I find some weird way to get it to work. Kinda rushed this one out. Sorry if you were expecting more after this long time. Next update I'm planning on finally adding support for modern layout.
 - Added Inbox and PrivateMessages Pages, actions don't work for now.
 - Added support for login page (Unfinished)
@@ -231,7 +239,8 @@ This is basically an update I made a while ago but never uploaded until now. The
 - (BC Page) Added support for the new Roblox Plus page.
 - (Home Page) Fixed bug where if user has BC/Premium the icon wouldn't appear on their avatar.
 ### Version 2.0.1
-(Version 2.1)
+(Version 2.1)  
+3/15/26
 - Minor bug fixes.
 - Added support for "My Stuff/Inventory" page.
 - Added modern and classic game launcher. (Changes based on what style you use.)
@@ -264,7 +273,8 @@ This is basically an update I made a while ago but never uploaded until now. The
 - (Profile Page) Added remove favorite button to favorited items if the user is on their own profile.
 - (ROBLOX 4.0) Fixed missing report abuse icon.
 ### Version 2.0.0
-(Version 2.0)
+(Version 2.0)  
+3/14/26
 - Definently will forget some stuff here.
 - Complete rewrite.  
   **Compared to V1:**
@@ -292,6 +302,9 @@ This is basically an update I made a while ago but never uploaded until now. The
 - A bunch of other stuff I forgot to put here.
 - Less buggy.
 # User Ads
+### Version 1.1
+10/27/26
+- (https://github.com/Xammand/2011-Roblox/issues/96) Fixed the script interfering with certain functionalities such as not being able to load into the client when starting a game.
 ### Version 1.0
 10/17/26
 - (https://github.com/Xammand/2011-Roblox/issues/71) Initial release.
